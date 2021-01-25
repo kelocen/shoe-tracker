@@ -13,4 +13,45 @@
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
   </style>
+
+  <!-- LoginFragment edit text fields -->
+  <style name="loginFragmentEditText" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
+    <item name="android:layout_marginStart">@dimen/loginFragmentViewMarginStart</item>
+    <item name="android:layout_marginEnd">@dimen/loginFragmentViewMarginEnd</item>
+    <item name="android:imeOptions">actionDone</item>
+    <item name="android:selectAllOnFocus">true</item>
+    <item name="android:textAlignment">center</item>
+  </style>
+  <!-- LoginFragment login/register buttons -->
+  <style name="parentLoginFragmentButton" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
+    <item name="android:layout_marginStart">@dimen/loginFragmentViewMarginStart</item>
+    <item name="android:layout_marginEnd">@dimen/loginFragmentViewMarginEnd</item>
+    <item name="android:enabled">true</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+  <!-- Login button -->
+  <style name="loginButton" parent="parentLoginFragmentButton">
+    <item name="android:text">@string/action_login</item>
+  </style>
+  <!-- Register button -->
+  <style name="registerButton" parent="parentLoginFragmentButton">
+    <item name="android:text">@string/action_register</item>
+  </style>
+  <!-- Progress Bar -->
+  <style name="progressBar" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/progressBarMarginTop</item>
+    <item name="android:layout_marginBottom">@dimen/progressBarMarginBottom</item>
+    <item name="android:layout_marginStart">@dimen/progressBarMarginStart</item>
+    <item name="android:layout_marginEnd">@dimen/progressBarMarginEnd</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:visibility">gone</item>
+  </style>
 </resources>

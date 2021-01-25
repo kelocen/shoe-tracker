@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Login Constraint Layout -->
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/fragment_vertical_margin"
+    android:paddingBottom="@dimen/fragment_vertical_margin"
+    android:paddingLeft="@dimen/fragment_horizontal_margin"
+    android:paddingRight="@dimen/fragment_horizontal_margin"
+    tools:context=".ui.login.LoginFragment">
+
+    <!-- Login Button -->
+    <Button
+      android:id="@+id/button_login"
+      style="@style/loginButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <!-- Register Button -->
+    <Button
+      android:id="@+id/button_register"
+      style="@style/registerButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <!-- Password EditText Field -->
+    <EditText
+      android:id="@+id/text_password"
+      style="@style/loginFragmentEditText"
+      android:autofillHints="@string/prompt_password"
+      android:hint="@string/prompt_password"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_username" />
+
+    <!-- Username EditText Field -->
+    <EditText
+      android:id="@+id/text_username"
+      style="@style/loginFragmentEditText"
+      android:autofillHints="@string/prompt_email"
+      android:hint="@string/prompt_email"
+      android:imeActionLabel="@string/action_login"
+      android:inputType="textEmailAddress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+      android:id="@+id/progress_login"
+      style="@style/progressBar"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/text_password"
+      app:layout_constraintStart_toStartOf="@+id/text_password"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.3" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

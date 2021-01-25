@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Shoe Store Inventory</string>
+  <string name="app_name">Shoe Store Inventory</string>
+  <string name="login_fragment_label">Login Fragment</string>
+  <!-- Login Fragment -->
+  <string name="action_login">Login</string>
+  <string name="action_register">Register</string>
+  <string name="prompt_password">Password</string>
+  <string name="prompt_email">Email</string>
 </resources>

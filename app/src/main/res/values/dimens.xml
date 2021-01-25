@@ -1,0 +1,16 @@
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="fragment_horizontal_margin">16dp</dimen>
+  <dimen name="fragment_vertical_margin">16dp</dimen>
+  <!-- General values -->
+  <dimen name="zeroHeightWidth">0dp</dimen>
+  <!-- Login fragment views-->
+  <dimen name="loginFragmentViewMarginTop">8dp</dimen>
+  <dimen name="loginFragmentViewMarginStart">24dp</dimen>
+  <dimen name="loginFragmentViewMarginEnd">24dp</dimen>
+  <!-- Progress Bar -->
+  <dimen name="progressBarMarginTop">64dp</dimen>
+  <dimen name="progressBarMarginBottom">64dp</dimen>
+  <dimen name="progressBarMarginStart">32dp</dimen>
+  <dimen name="progressBarMarginEnd">32dp</dimen>
+</resources>
