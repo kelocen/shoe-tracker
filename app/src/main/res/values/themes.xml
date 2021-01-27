@@ -13,7 +13,7 @@
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
   </style>
-
+  <!-- = = = = = Login Fragment = = = = = -->
   <!-- LoginFragment edit text fields -->
   <style name="loginFragmentEditText" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">@dimen/zeroHeightWidth</item>
@@ -43,15 +43,24 @@
   <style name="registerButton" parent="parentLoginFragmentButton">
     <item name="android:text">@string/action_register</item>
   </style>
-  <!-- Progress Bar -->
-  <style name="progressBar" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_height">wrap_content</item>
+  <!-- = = = = = Welcome Fragment = = = = = -->
+  <!-- Continue Button -->
+  <style name="continueButton" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_marginTop">@dimen/progressBarMarginTop</item>
-    <item name="android:layout_marginBottom">@dimen/progressBarMarginBottom</item>
-    <item name="android:layout_marginStart">@dimen/progressBarMarginStart</item>
-    <item name="android:layout_marginEnd">@dimen/progressBarMarginEnd</item>
-    <item name="android:layout_gravity">center</item>
-    <item name="android:visibility">gone</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:text">@string/continue_button</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+  <!-- App Name TextView -->
+  <style name="appNameText" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:text">@string/app_name</item>
+  </style>
+  <!-- Welcome TextView -->
+  <style name="welcomeMessage" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:text">@string/welcome_message</item>
   </style>
 </resources>

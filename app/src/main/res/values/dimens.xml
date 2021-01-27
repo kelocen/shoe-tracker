@@ -8,9 +8,4 @@
   <dimen name="loginFragmentViewMarginTop">8dp</dimen>
   <dimen name="loginFragmentViewMarginStart">24dp</dimen>
   <dimen name="loginFragmentViewMarginEnd">24dp</dimen>
-  <!-- Progress Bar -->
-  <dimen name="progressBarMarginTop">64dp</dimen>
-  <dimen name="progressBarMarginBottom">64dp</dimen>
-  <dimen name="progressBarMarginStart">32dp</dimen>
-  <dimen name="progressBarMarginEnd">32dp</dimen>
 </resources>

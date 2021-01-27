@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.welcome.WelcomeFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Continue Button -->
+    <Button
+      android:id="@+id/button_continue"
+      style="@style/continueButton"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_welcome_message" />
+
+    <!-- Welcome Message -->
+    <TextView
+      android:id="@+id/text_welcome_message"
+      style="@style/welcomeMessage"
+      app:layout_constraintBottom_toTopOf="@id/button_continue"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_app_name" />
+
+    <!-- App Name-->
+    <TextView
+      android:id="@+id/text_app_name"
+      style="@style/appNameText"
+      app:layout_constraintBottom_toTopOf="@id/text_welcome_message"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

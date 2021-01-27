@@ -7,5 +7,14 @@
   <fragment
     android:id="@+id/fragment_LoginFragment"
     android:label="@string/login_fragment_label"
-    android:name="com.example.shoestoreinventory.ui.login.LoginFragment" />
+    android:name="com.example.shoestoreinventory.ui.login.LoginFragment">
+    <action
+      android:id="@+id/action_LoginFragment_to_WelcomeFragment"
+      app:destination="@id/fragment_WelcomeFragment" />
+  </fragment>
+  <!-- Welcome Fragment -->
+  <fragment
+    android:id="@+id/fragment_WelcomeFragment"
+    android:label="string/welcome_fragment_label"
+    android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment" />
 </navigation>

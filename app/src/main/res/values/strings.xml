@@ -6,4 +6,7 @@
   <string name="action_register">Register</string>
   <string name="prompt_password">Password</string>
   <string name="prompt_email">Email</string>
+  <!-- Welcome Fragment -->
+  <string name="welcome_message">Welcome!</string>
+  <string name="continue_button">Continue</string>
 </resources>
