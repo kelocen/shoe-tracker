@@ -1,12 +1,18 @@
 <resources>
   <string name="app_name">Shoe Store Inventory</string>
-  <string name="login_fragment_label">Login Fragment</string>
+  <!-- Navigation Graph -->
+  <string name="label_login_fragment">Login Fragment</string>
+  <string name="label_welcome_fragment">Welcome Fragment</string>
+  <string name="label_instructions_fragment">Instructions Fragment</string>
   <!-- Login Fragment -->
   <string name="action_login">Login</string>
   <string name="action_register">Register</string>
   <string name="prompt_password">Password</string>
   <string name="prompt_email">Email</string>
   <!-- Welcome Fragment -->
-  <string name="welcome_message">Welcome!</string>
-  <string name="continue_button">Continue</string>
+  <string name="text_welcome_message">Welcome!</string>
+  <!-- Instructions Fragment -->
+  <string name="text_instructions_message">Instructions</string>
+  <!-- Shared Strings -->
+  <string name="action_continue">Continue</string>
 </resources>

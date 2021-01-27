@@ -44,23 +44,31 @@
     <item name="android:text">@string/action_register</item>
   </style>
   <!-- = = = = = Welcome Fragment = = = = = -->
-  <!-- Continue Button -->
-  <style name="continueButton" parent="Theme.ShoeStoreInventory">
+  <!-- Welcome TextView -->
+  <style name="welcomeMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/continue_button</item>
-    <item name="android:textAllCaps">true</item>
+    <item name="android:text">@string/text_welcome_message</item>
   </style>
+  <!-- = = = = = Instructions Fragment = = = = = -->
+  <!-- Instructions TextView -->
+  <style name="instructionsMessage" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:text">@string/text_instructions_message</item>
+  </style>
+  <!-- = = = = = Shared Styles = = = = = -->
   <!-- App Name TextView -->
   <style name="appNameText" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:text">@string/app_name</item>
   </style>
-  <!-- Welcome TextView -->
-  <style name="welcomeMessage" parent="Theme.ShoeStoreInventory">
+  <!-- Continue Button -->
+  <style name="continueButton" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/welcome_message</item>
+    <item name="android:text">@string/action_continue</item>
+    <item name="android:textAllCaps">true</item>
   </style>
 </resources>

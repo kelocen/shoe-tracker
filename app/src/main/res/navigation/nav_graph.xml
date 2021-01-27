@@ -6,7 +6,7 @@
   <!-- Login Fragment -->
   <fragment
     android:id="@+id/fragment_LoginFragment"
-    android:label="@string/login_fragment_label"
+    android:label="@string/label_login_fragment"
     android:name="com.example.shoestoreinventory.ui.login.LoginFragment">
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
@@ -15,6 +15,15 @@
   <!-- Welcome Fragment -->
   <fragment
     android:id="@+id/fragment_WelcomeFragment"
-    android:label="string/welcome_fragment_label"
-    android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment" />
+    android:label="@string/label_welcome_fragment"
+    android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment">
+    <action
+      android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
+      app:destination="@+id/fragment_InstructionsFragment" />
+  </fragment>
+  <!-- Instructions Fragment -->
+  <fragment
+    android:id="@+id/fragment_InstructionsFragment"
+    android:label="@string/label_instructions_fragment"
+    android:name="com.example.shoestoreinventory.ui.instructions.InstructionsFragment" />
 </navigation>
