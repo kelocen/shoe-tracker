@@ -57,6 +57,14 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:text">@string/text_instructions_message</item>
   </style>
+  <!-- = = = = = Listing Fragment = = = = = -->
+  <!-- Floating Button -->
+  <style name="floatingButton" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">@dimen/floating_button_margin_bottom</item>
+    <item name="android:layout_marginEnd">@dimen/floating_button_margin_end</item>
+  </style>
   <!-- = = = = = Shared Styles = = = = = -->
   <!-- App Name TextView -->
   <style name="appNameText" parent="Theme.ShoeStoreInventory">
@@ -71,4 +79,13 @@
     <item name="android:text">@string/action_continue</item>
     <item name="android:textAllCaps">true</item>
   </style>
+  <!-- Action Bar -->
+  <style name="Theme.ShoeStoreInventory.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+  <!-- App Bar Overlay -->
+  <style name="Theme.ShoeStoreInventory.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  <!-- Popup Overlay -->
+  <style name="Theme.ShoeStoreInventory.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

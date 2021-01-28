@@ -4,6 +4,7 @@
   <string name="label_login_fragment">Login Fragment</string>
   <string name="label_welcome_fragment">Welcome Fragment</string>
   <string name="label_instructions_fragment">Instructions Fragment</string>
+  <string name="label_listing_fragment">Listing Fragment</string>
   <!-- Login Fragment -->
   <string name="action_login">Login</string>
   <string name="action_register">Register</string>
@@ -13,6 +14,8 @@
   <string name="text_welcome_message">Welcome!</string>
   <!-- Instructions Fragment -->
   <string name="text_instructions_message">Instructions</string>
+  <!-- Listing Fragment -->
+  <string name="desc_add_shoes">Add shoes</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
 </resources>

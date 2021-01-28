@@ -25,5 +25,14 @@
   <fragment
     android:id="@+id/fragment_InstructionsFragment"
     android:label="@string/label_instructions_fragment"
-    android:name="com.example.shoestoreinventory.ui.instructions.InstructionsFragment" />
+    android:name="com.example.shoestoreinventory.ui.instructions.InstructionsFragment">
+    <action
+      android:id="@+id/action_InstructionsFragment_to_ListingFragment"
+      app:destination="@+id/fragment_ListingFragment" />
+  </fragment>
+  <!-- Listing Fragment -->
+  <fragment
+    android:id="@+id/fragment_ListingFragment"
+    android:label="@string/label_listing_fragment"
+    android:name="com.example.shoestoreinventory.ui.listing.ListingFragment" />
 </navigation>
