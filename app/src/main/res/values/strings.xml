@@ -16,6 +16,7 @@
   <string name="text_instructions_message">Instructions</string>
   <!-- Listing Fragment -->
   <string name="desc_add_shoes">Add shoes</string>
+  <string name="action_logout">Logout</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
 </resources>
