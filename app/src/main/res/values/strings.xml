@@ -5,6 +5,7 @@
   <string name="label_welcome_fragment">Welcome Fragment</string>
   <string name="label_instructions_fragment">Instructions Fragment</string>
   <string name="label_listing_fragment">Listing Fragment</string>
+  <string name="label_details_fragment">Details Fragment</string>
   <!-- Login Fragment -->
   <string name="action_login">Login</string>
   <string name="action_register">Register</string>
@@ -19,4 +20,7 @@
   <string name="action_logout">Logout</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
+  <!-- Details Fragment -->
+  <string name="action_save">Save</string>
+  <string name="action_cancel">Cancel</string>
 </resources>

@@ -16,34 +16,34 @@
     <!-- Login Button -->
     <Button
       android:id="@+id/button_login"
-      style="@style/loginButton"
+      style="@style/styleButtonLogin"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/text_password" />
+      app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 
     <!-- Register Button -->
     <Button
       android:id="@+id/button_register"
-      style="@style/registerButton"
+      style="@style/styleButtonRegister"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
     <!-- Password EditText Field -->
     <EditText
-      android:id="@+id/text_password"
-      style="@style/loginFragmentEditText"
+      android:id="@+id/edit_password"
+      style="@style/styleEditLoginFragment"
       android:autofillHints="@string/prompt_password"
       android:hint="@string/prompt_password"
       android:inputType="textPassword"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/text_username" />
+      app:layout_constraintTop_toBottomOf="@+id/edit_username" />
 
     <!-- Username EditText Field -->
     <EditText
-      android:id="@+id/text_username"
-      style="@style/loginFragmentEditText"
+      android:id="@+id/edit_username"
+      style="@style/styleEditLoginFragment"
       android:autofillHints="@string/prompt_email"
       android:hint="@string/prompt_email"
       android:imeActionLabel="@string/action_login"

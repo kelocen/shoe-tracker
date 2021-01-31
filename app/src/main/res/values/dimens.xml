@@ -10,4 +10,8 @@
   <dimen name="loginFragmentViewMarginEnd">24dp</dimen>
   <dimen name="floating_button_margin_bottom">40dp</dimen>
   <dimen name="floating_button_margin_end">40dp</dimen>
+  <!-- Details fragment views -->
+  <dimen name="details_label_margin_start">20dp</dimen>
+  <dimen name="details_buttons_margin_bottom">70dp</dimen>
+  <dimen name="details_edit_margin_start_end">20dp</dimen>
 </resources>

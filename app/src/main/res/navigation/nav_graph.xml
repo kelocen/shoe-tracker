@@ -34,5 +34,21 @@
   <fragment
     android:id="@+id/fragment_ListingFragment"
     android:label="@string/label_listing_fragment"
-    android:name="com.example.shoestoreinventory.ui.listing.ListingFragment" />
+    android:name="com.example.shoestoreinventory.ui.listing.ListingFragment">
+    <action
+      android:id="@+id/action_ListingFragment_to_DetailsFragment"
+      app:destination="@+id/fragment_DetailsFragment" />
+  </fragment>
+  <!-- Details Fragment -->
+  <fragment
+    android:id="@+id/fragment_DetailsFragment"
+    android:label="@string/label_details_fragment"
+    android:name="com.example.shoestoreinventory.ui.details.DetailsFragment">
+    <action
+      android:id="@+id/action_cancel_DetailsFragment_to_ListingFragment"
+      app:destination="@+id/fragment_ListingFragment" />
+    <action
+      android:id="@+id/action_save_DetailsFragment_to_ListingFragment"
+      app:destination="@+id/fragment_ListingFragment" />
+  </fragment>
 </navigation>

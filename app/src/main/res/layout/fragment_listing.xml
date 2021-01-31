@@ -26,7 +26,7 @@
     <!-- Add shoes button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/button_add_shoes"
-      style="@style/floatingButton"
+      style="@style/styleFloatingButtonAdd"
       android:contentDescription="@string/desc_add_shoes"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />

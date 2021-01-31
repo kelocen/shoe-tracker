@@ -11,7 +11,7 @@
     <!-- Continue Button -->
     <Button
       android:id="@+id/button_continue"
-      style="@style/continueButton"
+      style="@style/styleButtonContinue"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
     <!-- Instructions Message -->
     <TextView
       android:id="@+id/text_instructions_message"
-      style="@style/instructionsMessage"
+      style="@style/styleTextInstructionsMessage"
       app:layout_constraintBottom_toTopOf="@id/button_continue"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
     <!-- App Name-->
     <TextView
       android:id="@+id/text_app_name"
-      style="@style/appNameText"
+      style="@style/styleTextAppName"
       app:layout_constraintBottom_toTopOf="@id/text_instructions_message"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"

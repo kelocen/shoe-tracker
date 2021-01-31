@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.details.DetailsFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Save Button -->
+    <Button
+      android:id="@+id/button_save"
+      style="@style/styleButtonSave"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/button_cancel" />
+
+    <!-- Cancel Button -->
+    <Button
+      android:id="@+id/button_cancel"
+      style="@style/styleButtonCancel"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/button_save"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Shoe Name -->
+    <EditText
+      android:id="@+id/edit_shoe_name"
+      style="@style/styleEditShoeName"
+      android:autofillHints="Name"
+      app:layout_constraintBottom_toTopOf="@+id/edit_shoe_size"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edit_manufacturer"
+      tools:ignore="LabelFor" />
+
+    <!-- Shoe Size -->
+    <EditText
+      android:id="@+id/edit_shoe_size"
+      style="@style/styleEditShoeSize"
+      android:autofillHints="Size"
+      app:layout_constraintBottom_toTopOf="@+id/edit_shoe_description"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edit_shoe_name"
+      tools:ignore="LabelFor" />
+
+    <!-- Manufacturer Name -->
+    <EditText
+      android:id="@+id/edit_manufacturer"
+      style="@style/styleEditShoeManufacturer"
+      android:autofillHints="Manufacturer"
+      app:layout_constraintBottom_toTopOf="@+id/edit_shoe_name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="LabelFor" />
+
+    <!-- Shoe Description -->
+    <EditText
+      android:id="@+id/edit_shoe_description"
+      style="@style/styleEditShoeDescription"
+      android:autofillHints="Description"
+      app:layout_constraintBottom_toTopOf="@+id/button_save"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_size"
+      tools:ignore="LabelFor" />
+
+    <!-- Shoe Name Label -->
+    <TextView
+      android:id="@+id/text_shoe_name_label"
+      style="@style/styleTextShoeName"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_name"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_manufacturer" />
+
+    <!-- Shoe Size Label -->
+    <TextView
+      android:id="@+id/text_shoe_size_label"
+      style="@style/styleTextShoeSize"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_size"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_name" />
+
+    <!-- Company Name Label -->
+    <TextView
+      android:id="@+id/text_manufacturer_label"
+      style="@style/styleTextShoeManufacturer"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_manufacturer"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Shoe Description Label -->
+    <TextView
+      android:id="@+id/text_shoe_description_label"
+      style="@style/styleTextShoeDescription"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_description"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_size" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

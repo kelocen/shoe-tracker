@@ -15,7 +15,7 @@
   </style>
   <!-- = = = = = Login Fragment = = = = = -->
   <!-- LoginFragment edit text fields -->
-  <style name="loginFragmentEditText" parent="Theme.ShoeStoreInventory">
+  <style name="styleEditLoginFragment" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">@dimen/zeroHeightWidth</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
@@ -26,7 +26,7 @@
     <item name="android:textAlignment">center</item>
   </style>
   <!-- LoginFragment login/register buttons -->
-  <style name="parentLoginFragmentButton" parent="Theme.ShoeStoreInventory">
+  <style name="styleButtonParentLoginFragment" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">@dimen/zeroHeightWidth</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
@@ -36,48 +36,109 @@
     <item name="android:textAllCaps">true</item>
   </style>
   <!-- Login button -->
-  <style name="loginButton" parent="parentLoginFragmentButton">
+  <style name="styleButtonLogin" parent="styleButtonParentLoginFragment">
     <item name="android:text">@string/action_login</item>
   </style>
   <!-- Register button -->
-  <style name="registerButton" parent="parentLoginFragmentButton">
+  <style name="styleButtonRegister" parent="styleButtonParentLoginFragment">
     <item name="android:text">@string/action_register</item>
   </style>
   <!-- = = = = = Welcome Fragment = = = = = -->
   <!-- Welcome TextView -->
-  <style name="welcomeMessage" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextWelcomeMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:text">@string/text_welcome_message</item>
   </style>
   <!-- = = = = = Instructions Fragment = = = = = -->
   <!-- Instructions TextView -->
-  <style name="instructionsMessage" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextInstructionsMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:text">@string/text_instructions_message</item>
   </style>
   <!-- = = = = = Listing Fragment = = = = = -->
   <!-- Floating Button -->
-  <style name="floatingButton" parent="Theme.ShoeStoreInventory">
+  <style name="styleFloatingButtonAdd" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginBottom">@dimen/floating_button_margin_bottom</item>
     <item name="android:layout_marginEnd">@dimen/floating_button_margin_end</item>
   </style>
+  <!-- = = = = = Details Fragment = = = = = -->
+  <!-- Save Button -->
+  <style name="styleButtonSave" parent="styleButtonParent">
+    <item name="android:text">@string/action_save</item>
+    <item name="android:layout_marginBottom">@dimen/details_buttons_margin_bottom</item>
+  </style>
+  <!-- Cancel Button -->
+  <style name="styleButtonCancel" parent="styleButtonParent">
+    <item name="android:text">@string/action_cancel</item>
+    <item name="android:layout_marginBottom">@dimen/details_buttons_margin_bottom</item>
+  </style>
+  <!-- Label Text View -->
+  <style name="styleTextParentLabel" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_marginStart">@dimen/details_label_margin_start</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <!-- Manufacturer Label -->
+  <style name="styleTextShoeManufacturer" parent="styleTextParentLabel">
+    <item name="android:text">Brand/Manufacturer:</item>
+  </style>
+  <!-- Shoe Name Label -->
+  <style name="styleTextShoeName" parent="styleTextParentLabel">
+    <item name="android:text">Name/Model:</item>
+  </style>
+  <!-- Shoe Size Label -->
+  <style name="styleTextShoeSize" parent="styleTextParentLabel">
+    <item name="android:text">Size:</item>
+  </style>
+  <!-- Shoe Description Label -->
+  <style name="styleTextShoeDescription" parent="styleTextParentLabel">
+    <item name="android:text">Description:</item>
+  </style>
+  <!-- Edit Text View -->
+  <style name="styleEditParentInput" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:layout_marginStart">@dimen/details_edit_margin_start_end</item>
+    <item name="android:layout_marginEnd">@dimen/details_edit_margin_start_end</item>
+  </style>
+  <!-- Manufacturer Edit Text View -->
+  <style name="styleEditShoeManufacturer" parent="styleEditParentInput">
+    <item name="android:inputType">text</item>
+  </style>
+  <!-- Shoe Name Edit Text View -->
+  <style name="styleEditShoeName" parent="styleEditParentInput">
+    <item name="android:inputType">text</item>
+  </style>
+  <!-- Shoe Size Edit Text View -->
+  <style name="styleEditShoeSize" parent="styleEditParentInput">
+    <item name="android:inputType">numberDecimal</item>
+  </style>
+  <!-- Shoe Description Edit Text View -->
+  <style name="styleEditShoeDescription" parent="styleEditParentInput">
+    <item name="android:inputType">text</item>
+  </style>
   <!-- = = = = = Shared Styles = = = = = -->
   <!-- App Name TextView -->
-  <style name="appNameText" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextAppName" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:text">@string/app_name</item>
   </style>
-  <!-- Continue Button -->
-  <style name="continueButton" parent="Theme.ShoeStoreInventory">
+  <!-- Parent Button Style -->
+  <style name="styleButtonParent" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/action_continue</item>
     <item name="android:textAllCaps">true</item>
+  </style>
+  <!-- Continue Button -->
+  <style name="styleButtonContinue" parent="styleButtonParent">
+    <item name="android:text">@string/action_continue</item>
   </style>
   <!-- Action Bar -->
   <style name="Theme.ShoeStoreInventory.NoActionBar">

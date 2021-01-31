@@ -5,6 +5,7 @@ import android.view.*
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.shoestoreinventory.R
 import com.example.shoestoreinventory.databinding.FragmentListingBinding
@@ -37,7 +38,7 @@ class ListingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonAddShoes.setOnClickListener {
-            // TODO actions
+            findNavController().navigate(R.id.action_ListingFragment_to_DetailsFragment)
         }
     }
 }
