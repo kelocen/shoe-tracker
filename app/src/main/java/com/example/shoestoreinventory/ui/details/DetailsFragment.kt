@@ -22,7 +22,6 @@ class DetailsFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false)
-        setHasOptionsMenu(false)
         return binding.root
     }
 

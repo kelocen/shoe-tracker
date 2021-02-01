@@ -21,9 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         Timber.plant(Timber.DebugTree())
         setSupportActionBar(binding.toolbar)
-        val navHostFragment =
-                supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container_main)
-                        as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(
+                R.id.nav_host_fragment_container_main) as NavHostFragment
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
