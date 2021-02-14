@@ -18,6 +18,10 @@
   <!-- Listing Fragment -->
   <string name="desc_add_shoes">Add shoes</string>
   <string name="action_logout">Logout</string>
+  <string name="label_shoe_manufacturer">Manufacturer</string>
+  <string name="label_shoe_name">Name</string>
+  <string name="label_shoe_size">Size</string>
+  <string name="label_shoe_description">Description</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
   <!-- Details Fragment -->

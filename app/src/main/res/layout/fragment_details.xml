@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  tools:context=".ui.details.DetailsFragment">
+  xmlns:tools="http://schemas.android.com/tools">
 
   <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_add_shoe"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailsFragment">
 
     <!-- Save Button -->
     <Button
       android:id="@+id/button_save"
       style="@style/styleButtonSave"
+      android:onClick="@{() -> shoeViewModel.onClickSave(shoeViewModel.shoe)}"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@id/button_cancel" />
@@ -20,6 +22,7 @@
     <Button
       android:id="@+id/button_cancel"
       style="@style/styleButtonCancel"
+      android:onClick="@{() -> shoeViewModel.onClickCancel()}"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/button_save"
       app:layout_constraintStart_toStartOf="parent" />
@@ -29,10 +32,11 @@
       android:id="@+id/edit_shoe_name"
       style="@style/styleEditShoeName"
       android:autofillHints="Name"
+      android:text="@={shoeViewModel.shoe.name}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_size"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/edit_manufacturer"
+      app:layout_constraintTop_toBottomOf="@id/edit_shoe_manufacturer"
       tools:ignore="LabelFor" />
 
     <!-- Shoe Size -->
@@ -40,6 +44,7 @@
       android:id="@+id/edit_shoe_size"
       style="@style/styleEditShoeSize"
       android:autofillHints="Size"
+      android:text="@={Converter.doubleToString(shoeViewModel.shoe.size)}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_description"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -48,9 +53,10 @@
 
     <!-- Manufacturer Name -->
     <EditText
-      android:id="@+id/edit_manufacturer"
+      android:id="@+id/edit_shoe_manufacturer"
       style="@style/styleEditShoeManufacturer"
       android:autofillHints="Manufacturer"
+      android:text="@={shoeViewModel.shoe.manufacturer}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_name"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +68,7 @@
       android:id="@+id/edit_shoe_description"
       style="@style/styleEditShoeDescription"
       android:autofillHints="Description"
+      android:text="@={shoeViewModel.shoe.description}"
       app:layout_constraintBottom_toTopOf="@+id/button_save"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +81,7 @@
       style="@style/styleTextShoeName"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_name"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_manufacturer" />
+      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_manufacturer" />
 
     <!-- Shoe Size Label -->
     <TextView
@@ -88,7 +95,7 @@
     <TextView
       android:id="@+id/text_manufacturer_label"
       style="@style/styleTextShoeManufacturer"
-      app:layout_constraintBottom_toBottomOf="@+id/edit_manufacturer"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_manufacturer"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,5 +108,12 @@
       app:layout_constraintTop_toBottomOf="@+id/edit_shoe_size" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <data>
+    <import type="com.example.shoestoreinventory.utils.Converter" />
+    <variable
+      name="shoeViewModel"
+      type="com.example.shoestoreinventory.ui.ShoeViewModel" />
+  </data>
 
 </layout>

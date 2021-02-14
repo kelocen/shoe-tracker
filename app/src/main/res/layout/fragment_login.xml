@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  tools:context=".ui.login.LoginFragment">
+  xmlns:tools="http://schemas.android.com/tools">
 
   <!-- Login Constraint Layout -->
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,7 +10,8 @@
     android:paddingTop="@dimen/fragment_vertical_margin"
     android:paddingBottom="@dimen/fragment_vertical_margin"
     android:paddingLeft="@dimen/fragment_horizontal_margin"
-    android:paddingRight="@dimen/fragment_horizontal_margin">
+    android:paddingRight="@dimen/fragment_horizontal_margin"
+    tools:context=".ui.login.LoginFragment">
 
     <!-- Login Button -->
     <Button

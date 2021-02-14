@@ -11,7 +11,7 @@ import com.example.shoestoreinventory.R
 import com.example.shoestoreinventory.databinding.FragmentInstructionsBinding
 
 /**
- * A simple [Fragment] subclass.
+ * A [Fragment] subclass for the instructions screen.
  */
 class InstructionsFragment : Fragment() {
 

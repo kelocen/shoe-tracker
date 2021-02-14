@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  tools:context=".ui.listing.ListingFragment">
+  xmlns:tools="http://schemas.android.com/tools">
+
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.listing.ListingFragment">
+
     <!-- Shoe list scroll view -->
     <ScrollView
       android:layout_width="match_parent"
@@ -14,15 +16,17 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent">
+
       <!-- Shoe list layout -->
       <LinearLayout
-        android:id="@+id/layout_shoe_listing"
+        android:id="@+id/layout_shoes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <!-- TODO -->
-      </LinearLayout>
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"></LinearLayout>
     </ScrollView>
+
     <!-- Add shoes button -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/button_add_shoes"

@@ -11,7 +11,8 @@ import com.example.shoestoreinventory.R
 import com.example.shoestoreinventory.databinding.FragmentLoginBinding
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * A [Fragment] subclass for the application login screen, and the default destination in the
+ * navigation.
  */
 class LoginFragment : Fragment() {
 

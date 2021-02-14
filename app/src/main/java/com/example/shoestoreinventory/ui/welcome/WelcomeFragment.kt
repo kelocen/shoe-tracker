@@ -11,7 +11,7 @@ import com.example.shoestoreinventory.R
 import com.example.shoestoreinventory.databinding.FragmentWelcomeBinding
 
 /**
- * A simple [Fragment] subclass.
+ * A [Fragment] subclass for the welcome screen.
  */
 class WelcomeFragment : Fragment() {
     private lateinit var binding: FragmentWelcomeBinding

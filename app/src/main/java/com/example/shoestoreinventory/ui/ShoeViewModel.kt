@@ -1,0 +1,69 @@
+package com.example.shoestoreinventory.ui
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.example.shoestoreinventory.data.models.Shoe
+
+/**
+ * A shared [ViewModel] subclass for creating and displaying [Shoe] data.
+ */
+class ShoeViewModel : ViewModel() {
+
+    private var manufacturer: String = "Brand"
+    private var name: String = "Name"
+    private var size: Double = 0.0
+    private var description: String = "Description"
+
+    var shoe: Shoe = Shoe(manufacturer, name, size, description)
+    private var shoes: MutableList<Shoe> = mutableListOf()
+
+    private var _shoesLiveData = MutableLiveData<MutableList<Shoe>>()
+    val shoesLiveData: LiveData<MutableList<Shoe>>
+        get() = _shoesLiveData
+
+    private var _eventOnSave = MutableLiveData<Boolean>()
+    val eventOnSave: LiveData<Boolean>
+        get() = _eventOnSave
+
+    private var _eventOnCancel = MutableLiveData<Boolean>()
+    val eventOnCancel: LiveData<Boolean>
+        get() = _eventOnCancel
+
+    init {
+        _shoesLiveData.value = null
+    }
+
+    /**
+     * Updates the shoes [list][shoes] and [live data][_shoesLiveData] and assigns **true** to the
+     * [save event boolean][_eventOnSave] observed by the
+     * [DetailsFragment][com.example.shoestoreinventory.ui.details.DetailsFragment].
+     * @param shoe A [Shoe] object.
+     */
+    fun onClickSave(shoe: Shoe) {
+        _eventOnSave.value = true
+        shoes.add(shoe)
+        _shoesLiveData.value = shoes
+    }
+
+    /**
+     * Assigns **true** to the [cancel event boolean][_eventOnCancel] observed by the
+     * [DetailsFragment][com.example.shoestoreinventory.ui.details.DetailsFragment].
+     */
+    fun onClickCancel() {
+        _eventOnCancel.value = true
+    }
+
+    /**
+     * Resets the click event booleans to a value of false.
+     */
+    fun onClickComplete() {
+        if (_eventOnSave.value == true) {
+            _eventOnSave.value = false
+        }
+        if (_eventOnCancel.value == true) {
+            _eventOnCancel.value = false
+        }
+    }
+
+}
