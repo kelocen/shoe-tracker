@@ -10,7 +10,9 @@
     android:name="com.example.shoestoreinventory.ui.login.LoginFragment">
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
-      app:destination="@id/fragment_WelcomeFragment" />
+      app:destination="@id/fragment_WelcomeFragment"
+      app:popUpTo="@id/nav_graph"
+      app:popUpToInclusive="true" />
   </fragment>
   <!-- Welcome Fragment -->
   <fragment
@@ -28,7 +30,9 @@
     android:name="com.example.shoestoreinventory.ui.instructions.InstructionsFragment">
     <action
       android:id="@+id/action_InstructionsFragment_to_ListingFragment"
-      app:destination="@+id/fragment_ListingFragment" />
+      app:destination="@+id/fragment_ListingFragment"
+      app:popUpTo="@id/nav_graph"
+      app:popUpToInclusive="true" />
   </fragment>
   <!-- Listing Fragment -->
   <fragment
@@ -38,6 +42,7 @@
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
       app:destination="@+id/fragment_DetailsFragment" />
+
   </fragment>
   <!-- Details Fragment -->
   <fragment

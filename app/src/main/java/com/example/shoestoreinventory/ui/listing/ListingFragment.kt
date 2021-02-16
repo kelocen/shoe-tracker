@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -36,8 +37,19 @@ class ListingFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
-                || super.onOptionsItemSelected(item)
+        return if (item.itemId == R.id.fragment_LoginFragment) {
+            val options = NavOptions.Builder()
+                .setLaunchSingleTop(true).setPopUpTo(R.id.nav_graph, true).build()
+            try {
+                findNavController().navigate(item.itemId, null, options)
+                true
+            } catch (ex: IllegalArgumentException) {
+                false
+            }
+        } else {
+            NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
+                    || super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
