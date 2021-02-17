@@ -14,4 +14,11 @@
   <dimen name="details_label_margin_start">20dp</dimen>
   <dimen name="details_buttons_margin_bottom">70dp</dimen>
   <dimen name="details_edit_margin_start_end">20dp</dimen>
+  <!-- Shoe item layout views -->
+  <dimen name="shoe_item_manufacturer_margin_top">8dp</dimen>
+  <dimen name="shoe_item_manufacturer_text_size">18sp</dimen>
+  <dimen name="shoe_item_name_text_size">24sp</dimen>
+  <dimen name="shoe_item_name_margin_top">8dp</dimen>
+  <dimen name="shoe_item_size_text_size">18sp</dimen>
+  <dimen name="shoe_item_description_text_size">18sp</dimen>
 </resources>

@@ -65,5 +65,4 @@ class ShoeViewModel : ViewModel() {
             _eventOnCancel.value = false
         }
     }
-
 }

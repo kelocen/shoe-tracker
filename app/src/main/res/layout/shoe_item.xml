@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/layout_shoe_item"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <!-- Shoe Manufacturer/Brand -->
+  <TextView
+    android:id="@+id/text_shoe_manufacturer"
+    style="@style/styleTextShoeItemManufacturer"
+    app:layout_constraintBottom_toTopOf="@+id/text_shoe_name"
+    app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+  <!-- Shoe Name -->
+  <TextView
+    android:id="@+id/text_shoe_name"
+    style="@style/styleTextShoeItemName"
+    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+    app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+  <!-- Shoe Size -->
+  <TextView
+    android:id="@+id/text_shoe_size"
+    style="@style/styleTextShoeItemSize"
+    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+    app:layout_constraintEnd_toEndOf="@+id/text_shoe_name"
+    app:layout_constraintStart_toStartOf="@+id/text_shoe_name"
+    app:layout_constraintTop_toBottomOf="@+id/text_shoe_name" />
+
+  <!-- Shoe Description -->
+  <TextView
+    android:id="@+id/text_shoe_description"
+    style="@style/styleTextShoeItemDescription"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline_middle"
+    app:layout_constraintStart_toStartdOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+  <!-- Top Guide -->
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="30dp" />
+
+  <!-- Middle Guide -->
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_middle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="185dp" />
+
+  <!-- Bottom Guide -->
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="175dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
