@@ -10,12 +10,10 @@ import com.example.shoestoreinventory.data.models.Shoe
  */
 class ShoeViewModel : ViewModel() {
 
-    private var manufacturer: String = "Brand"
-    private var name: String = "Name"
-    private var size: Double = 0.0
-    private var description: String = "Description"
-
-    var shoe: Shoe = Shoe(manufacturer, name, size, description)
+    var manufacturer: String = ""
+    var name: String = ""
+    var size: Double? = null
+    var description: String = ""
     private var shoes: MutableList<Shoe> = mutableListOf()
 
     private var _shoesLiveData = MutableLiveData<MutableList<Shoe>>()
@@ -38,12 +36,26 @@ class ShoeViewModel : ViewModel() {
      * Updates the shoes [list][shoes] and [live data][_shoesLiveData] and assigns **true** to the
      * [save event boolean][_eventOnSave] observed by the
      * [DetailsFragment][com.example.shoestoreinventory.ui.details.DetailsFragment].
-     * @param shoe A [Shoe] object.
+     * @param manufacturer A string that contains the shoe manufacturer.
+     * @param name A string that contains the shoe name.
+     * @param size A double that contains the shoe size.
+     * @param description A string that contains the shoe description.
      */
-    fun onClickSave(shoe: Shoe) {
+    fun onClickSave(manufacturer: String, name: String, size: Double?, description: String) {
         _eventOnSave.value = true
-        shoes.add(shoe)
+        shoes.add(Shoe(manufacturer, name, size, description))
         _shoesLiveData.value = shoes
+        resetFields()
+    }
+
+    /**
+     * Clears previous shoe data from the fields to add new shoes.
+     */
+    private fun resetFields() {
+        manufacturer = ""
+        name = ""
+        size = null
+        description = ""
     }
 
     /**

@@ -22,6 +22,7 @@
   <string name="label_shoe_name">Name</string>
   <string name="label_shoe_size">Size</string>
   <string name="label_shoe_description">Description</string>
+  <string name="message_no_shoes_added">No shoes have been added yet!</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
   <!-- Details Fragment -->

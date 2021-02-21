@@ -14,6 +14,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.shoestoreinventory.R
 import com.example.shoestoreinventory.data.models.Shoe
 import com.example.shoestoreinventory.databinding.FragmentListingBinding
+import com.example.shoestoreinventory.databinding.ShoeItemBinding
 import com.example.shoestoreinventory.ui.ShoeViewModel
 
 /**
@@ -63,39 +64,19 @@ class ListingFragment : Fragment() {
     }
 
     private fun displayShoeList(shoes: MutableList<Shoe>?) {
-        // TODO replace with item layout
-        val shoesLayout: LinearLayout = binding.layoutShoes
-        val shoeManufacturerLabel = TextView(context)
-        shoeManufacturerLabel.setText(R.string.label_shoe_manufacturer)
-        val shoeNameLabel = TextView(context)
-        shoeNameLabel.setText(R.string.label_shoe_name)
-        val shoeSizeLabel = TextView(context)
-        shoeSizeLabel.setText(R.string.label_shoe_size)
-        val shoeDescriptionLabel = TextView(context)
-        shoeDescriptionLabel.setText(R.string.label_shoe_description)
-        val shoeManufacturer = TextView(context)
-        val shoeName = TextView(context)
-        val shoeSize = TextView(context)
-        val shoeDescription = TextView(context)
-
+        val shoesLayout: LinearLayout = binding.linearLayoutShoes
         if (shoes.isNullOrEmpty()) {
             val noShoes = TextView(context)
-            noShoes.text = "No shoes have been entered!"
+            noShoes.textSize = 24.0F
+            noShoes.gravity = 1
+            noShoes.text = getString(R.string.message_no_shoes_added)
             shoesLayout.addView(noShoes)
         } else {
-            shoeManufacturer.text = shoes[0].manufacturer
-            shoeName.text = shoes[0].name
-            shoeSize.text = shoes[0].size.toString()
-            shoeDescription.text = shoes[0].description
-
-            shoesLayout.addView(shoeManufacturerLabel)
-            shoesLayout.addView(shoeManufacturer)
-            shoesLayout.addView(shoeNameLabel)
-            shoesLayout.addView(shoeName)
-            shoesLayout.addView(shoeSizeLabel)
-            shoesLayout.addView(shoeSize)
-            shoesLayout.addView(shoeDescriptionLabel)
-            shoesLayout.addView(shoeDescription)
+            for (shoe: Shoe in shoes) {
+                val shoeItemBinding = ShoeItemBinding.inflate(layoutInflater, null, false)
+                shoeItemBinding.shoe = shoe
+                shoesLayout.addView(shoeItemBinding.root)
+            }
         }
     }
 }

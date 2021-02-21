@@ -1,68 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:id="@+id/layout_shoe_item"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <!-- Shoe Manufacturer/Brand -->
-  <TextView
-    android:id="@+id/text_shoe_manufacturer"
-    style="@style/styleTextShoeItemManufacturer"
-    app:layout_constraintBottom_toTopOf="@+id/text_shoe_name"
-    app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_shoe_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-  <!-- Shoe Name -->
-  <TextView
-    android:id="@+id/text_shoe_name"
-    style="@style/styleTextShoeItemName"
-    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
-    app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+    <!-- Shoe Manufacturer/Brand -->
+    <TextView
+      android:id="@+id/text_shoe_manufacturer"
+      style="@style/styleTextShoeItemManufacturer"
+      android:text="@{shoe.manufacturer}"
+      app:layout_constraintBottom_toTopOf="@+id/text_shoe_name"
+      app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
-  <!-- Shoe Size -->
-  <TextView
-    android:id="@+id/text_shoe_size"
-    style="@style/styleTextShoeItemSize"
-    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
-    app:layout_constraintEnd_toEndOf="@+id/text_shoe_name"
-    app:layout_constraintStart_toStartOf="@+id/text_shoe_name"
-    app:layout_constraintTop_toBottomOf="@+id/text_shoe_name" />
+    <!-- Shoe Name -->
+    <TextView
+      android:id="@+id/text_shoe_name"
+      style="@style/styleTextShoeItemName"
+      android:text="@{shoe.name}"
+      app:layout_constraintBottom_toTopOf="@+id/text_shoe_size"
+      app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_shoe_manufacturer" />
 
-  <!-- Shoe Description -->
-  <TextView
-    android:id="@+id/text_shoe_description"
-    style="@style/styleTextShoeItemDescription"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@+id/guideline_middle"
-    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+    <!-- Shoe Size -->
+    <TextView
+      android:id="@+id/text_shoe_size"
+      style="@style/styleTextShoeItemSize"
+      android:text="@{Converter.doubleToString(shoe.size)}"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+      app:layout_constraintEnd_toEndOf="@+id/text_shoe_name"
+      app:layout_constraintStart_toStartOf="@+id/text_shoe_name"
+      app:layout_constraintTop_toBottomOf="@+id/text_shoe_name" />
 
-  <!-- Top Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_top"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="30dp" />
+    <!-- Shoe Description -->
+    <TextView
+      android:id="@+id/text_shoe_description"
+      style="@style/styleTextShoeItemDescription"
+      android:text="@{shoe.description}"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline_middle"
+      app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
-  <!-- Middle Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_middle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="185dp" />
+    <!-- Top Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="16dp" />
 
-  <!-- Bottom Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_bottom"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="175dp" />
+    <!-- Middle Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_middle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="185dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Bottom Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_bottom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="150dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <data>
+    <import type="com.example.shoestoreinventory.utils.Converter" />
+    <variable
+      name="shoe"
+      type="com.example.shoestoreinventory.data.models.Shoe" />
+  </data>
+</layout>

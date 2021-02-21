@@ -83,7 +83,7 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textStyle">bold</item>
   </style>
-  <!-- Company Name Label -->
+  <!-- Manufacturer Label -->
   <style name="styleTextShoeManufacturer" parent="styleTextParentLabel">
     <item name="android:text">Brand/Manufacturer:</item>
   </style>
@@ -122,6 +122,33 @@
   <!-- Shoe Description Edit Text View -->
   <style name="styleEditShoeDescription" parent="styleEditParentInput">
     <item name="android:inputType">text</item>
+  </style>
+  <!-- = = = = = Shoe Item Layout = = = = = -->
+  <style name="styleTextShoeItem" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+  </style>
+  <!-- Shoe Item Manufacturer -->
+  <style name="styleTextShoeItemManufacturer" parent="styleTextShoeItem">
+    <item name="android:textSize">@dimen/shoe_item_manufacturer_text_size</item>
+    <item name="android:layout_marginTop">@dimen/shoe_item_manufacturer_margin_top</item>
+    <item name="android:text">@string/label_shoe_manufacturer</item>
+  </style>
+  <!-- Shoe Item Name -->
+  <style name="styleTextShoeItemName" parent="styleTextShoeItem">
+    <item name="android:textSize">@dimen/shoe_item_name_text_size</item>
+    <item name="android:layout_marginTop">@dimen/shoe_item_name_margin_top</item>
+    <item name="android:text">@string/label_shoe_name</item>
+  </style>
+  <!-- Shoe Item Size -->
+  <style name="styleTextShoeItemSize" parent="styleTextShoeItem">
+    <item name="android:textSize">@dimen/shoe_item_size_text_size</item>
+    <item name="android:text">@string/label_shoe_size</item>
+  </style>
+  <!-- Shoe Item Description -->
+  <style name="styleTextShoeItemDescription" parent="styleTextShoeItem">
+    <item name="android:textSize">@dimen/shoe_item_description_text_size</item>
+    <item name="android:text">@string/label_shoe_description</item>
   </style>
   <!-- = = = = = Shared Styles = = = = = -->
   <!-- App Name TextView -->

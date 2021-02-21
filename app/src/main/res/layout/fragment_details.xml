@@ -13,7 +13,7 @@
     <Button
       android:id="@+id/button_save"
       style="@style/styleButtonSave"
-      android:onClick="@{() -> shoeViewModel.onClickSave(shoeViewModel.shoe)}"
+      android:onClick="@{() -> shoe.onClickSave(shoe.manufacturer, shoe.name, shoe.size, shoe.description)}"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@id/button_cancel" />
@@ -22,7 +22,7 @@
     <Button
       android:id="@+id/button_cancel"
       style="@style/styleButtonCancel"
-      android:onClick="@{() -> shoeViewModel.onClickCancel()}"
+      android:onClick="@{() -> shoe.onClickCancel()}"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/button_save"
       app:layout_constraintStart_toStartOf="parent" />
@@ -32,7 +32,7 @@
       android:id="@+id/edit_shoe_name"
       style="@style/styleEditShoeName"
       android:autofillHints="Name"
-      android:text="@={shoeViewModel.shoe.name}"
+      android:text="@={shoe.name}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_size"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
       android:id="@+id/edit_shoe_size"
       style="@style/styleEditShoeSize"
       android:autofillHints="Size"
-      android:text="@={Converter.doubleToString(shoeViewModel.shoe.size)}"
+      android:text="@={Converter.doubleToString(shoe.size)}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_description"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
       android:id="@+id/edit_shoe_manufacturer"
       style="@style/styleEditShoeManufacturer"
       android:autofillHints="Manufacturer"
-      android:text="@={shoeViewModel.shoe.manufacturer}"
+      android:text="@={shoe.manufacturer}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_name"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
       android:id="@+id/edit_shoe_description"
       style="@style/styleEditShoeDescription"
       android:autofillHints="Description"
-      android:text="@={shoeViewModel.shoe.description}"
+      android:text="@={shoe.description}"
       app:layout_constraintBottom_toTopOf="@+id/button_save"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -112,8 +112,7 @@
   <data>
     <import type="com.example.shoestoreinventory.utils.Converter" />
     <variable
-      name="shoeViewModel"
+      name="shoe"
       type="com.example.shoestoreinventory.ui.ShoeViewModel" />
   </data>
-
 </layout>

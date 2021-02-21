@@ -28,7 +28,7 @@ class DetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.shoeViewModel = shoeViewModel
+        binding.shoe = shoeViewModel
         shoeViewModel.eventOnSave.observe(viewLifecycleOwner, { saveClicked ->
             if (saveClicked) {
                 findNavController().navigateUp()
