@@ -9,6 +9,7 @@
 /captures
 .cxx
 /.idea/dbnavigator.xml
+/notes.txt
 
 # Created by https://www.toptal.com/developers/gitignore/api/androidstudio,android,java,kotlin
 # Edit at https://www.toptal.com/developers/gitignore?templates=androidstudio,android,java,kotlin

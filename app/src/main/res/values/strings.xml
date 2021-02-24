@@ -1,8 +1,8 @@
 <resources>
-  <string name="app_name">Shoe Store Inventory</string>
+  <string name="app_name">Shoe Tracker</string>
   <!-- Navigation Graph -->
-  <string name="label_login_fragment">Login Fragment</string>
-  <string name="label_welcome_fragment">Welcome Fragment</string>
+  <string name="label_login_fragment">Login</string>
+  <string name="label_welcome_fragment">Welcome!</string>
   <string name="label_instructions_fragment">Instructions Fragment</string>
   <string name="label_listing_fragment">Listing Fragment</string>
   <string name="label_details_fragment">Details Fragment</string>
@@ -12,7 +12,8 @@
   <string name="prompt_password">Password</string>
   <string name="prompt_email">Email</string>
   <!-- Welcome Fragment -->
-  <string name="text_welcome_message">Welcome!</string>
+  <string name="message_continue">Click continue to get started.</string>
+  <string name="shoe_tracker_logo">Shoe Tracker logo</string>
   <!-- Instructions Fragment -->
   <string name="text_instructions_message">Instructions</string>
   <!-- Listing Fragment -->

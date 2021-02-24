@@ -3,9 +3,8 @@
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
   <color name="color_primary">#01579b</color>
-  <color name="color_primary_light">#4f83cc</color>
   <color name="color_primary_dark">#002f6c</color>
   <color name="color_secondary">#0277bd</color>
   <color name="color_secondary_light">#58a5f0</color>
-  <color name="color_secondary_dark">#004c8c</color>
+  <color name="color_screen_background">#DFDFDF</color>
 </resources>

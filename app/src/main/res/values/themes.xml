@@ -13,25 +13,50 @@
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
   </style>
+  <!-- = = = = = Main Fragment = = = = = -->
+  <!-- Constraint Layout -->
+  <style name="styleConstraintLayoutActivityMain" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/color_screen_background</item>
+  </style>
+  <!-- Fragment Container View -->
+  <style name="styleFragmentContainerActivityMain" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:name">androidx.navigation.fragment.NavHostFragment</item>
+  </style>
+  <!-- App Bar -->
+  <style name="styleAppBarActivityMain" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:theme">@style/Theme.ShoeStoreInventory.AppBarOverlay</item>
+  </style>
+  <!-- Toolbar -->
+  <style name="styleToolbarActivityMain" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">?attr/actionBarSize</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">?attr/colorPrimary</item>
+  </style>
   <!-- = = = = = Login Fragment = = = = = -->
   <!-- LoginFragment edit text fields -->
   <style name="styleEditLoginFragment" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
-    <item name="android:layout_marginStart">@dimen/loginFragmentViewMarginStart</item>
-    <item name="android:layout_marginEnd">@dimen/loginFragmentViewMarginEnd</item>
+    <item name="android:layout_marginTop">@dimen/login_fragment_view_margin_top</item>
+    <item name="android:layout_marginStart">@dimen/login_fragment_view_margin_start</item>
+    <item name="android:layout_marginEnd">@dimen/login_fragment_view_margin_end</item>
     <item name="android:imeOptions">actionDone</item>
     <item name="android:selectAllOnFocus">true</item>
     <item name="android:textAlignment">center</item>
   </style>
   <!-- LoginFragment login/register buttons -->
   <style name="styleButtonParentLoginFragment" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginTop">@dimen/loginFragmentViewMarginTop</item>
-    <item name="android:layout_marginStart">@dimen/loginFragmentViewMarginStart</item>
-    <item name="android:layout_marginEnd">@dimen/loginFragmentViewMarginEnd</item>
+    <item name="android:layout_marginTop">@dimen/login_fragment_view_margin_top</item>
+    <item name="android:layout_marginStart">@dimen/login_fragment_view_margin_start</item>
+    <item name="android:layout_marginEnd">@dimen/login_fragment_view_margin_end</item>
     <item name="android:enabled">true</item>
     <item name="android:textAllCaps">true</item>
   </style>
@@ -44,11 +69,39 @@
     <item name="android:text">@string/action_register</item>
   </style>
   <!-- = = = = = Welcome Fragment = = = = = -->
-  <!-- Welcome TextView -->
-  <style name="styleTextWelcomeMessage" parent="Theme.ShoeStoreInventory">
+  <!-- Scroll View -->
+  <style name="styleScrollViewWelcomeFragment">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:fillViewport">true</item>
+  </style>
+  <!-- Constraint Layout -->
+  <style name="styleConstraintLayoutWelcomeFragment">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+  <!-- Shoe Tracker Logo -->
+  <style name="styleImageShoeTrackerLogo" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">@dimen/welcome_fragment_logo_height</item>
+    <item name="android:layout_width">@dimen/welcome_fragment_logo_width</item>
+    <item name="android:scaleType">fitCenter</item>
+    <item name="android:src">@drawable/shoe_tracker_logo</item>
+    <!--
+      File Name: shoe_tracker_logo.png
+      Original Name: athletic-shoes-25493_640.png
+      Location: https://pixabay.com/vectors/athletic-shoes-shoes-sneakers-25493/
+      Artist/Owner: OpenClipart-Vectors
+      Date: 2/23/2021
+      License: https://pixabay.com/service/license/
+    -->
+  </style>
+  <!-- Continue TextView -->
+  <style name="styleTextContinueMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/text_welcome_message</item>
+    <item name="android:text">@string/message_continue</item>
+    <item name="android:fontFamily">@font/advent_pro_bold</item>
+    <item name="android:textSize">@dimen/welcome_fragment_continue_text_size</item>
   </style>
   <!-- = = = = = Instructions Fragment = = = = = -->
   <!-- Instructions TextView -->
@@ -101,7 +154,7 @@
   </style>
   <!-- Edit Text View -->
   <style name="styleEditParentInput" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/zeroHeightWidth</item>
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textAlignment">center</item>
     <item name="android:layout_marginStart">@dimen/details_edit_margin_start_end</item>

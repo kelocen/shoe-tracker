@@ -3,11 +3,11 @@
   <dimen name="fragment_horizontal_margin">16dp</dimen>
   <dimen name="fragment_vertical_margin">16dp</dimen>
   <!-- General values -->
-  <dimen name="zeroHeightWidth">0dp</dimen>
+  <dimen name="general_dimen_zero_height_width">0dp</dimen>
   <!-- Login fragment views-->
-  <dimen name="loginFragmentViewMarginTop">8dp</dimen>
-  <dimen name="loginFragmentViewMarginStart">24dp</dimen>
-  <dimen name="loginFragmentViewMarginEnd">24dp</dimen>
+  <dimen name="login_fragment_view_margin_top">8dp</dimen>
+  <dimen name="login_fragment_view_margin_start">24dp</dimen>
+  <dimen name="login_fragment_view_margin_end">24dp</dimen>
   <dimen name="floating_button_margin_bottom">10dp</dimen>
   <dimen name="floating_button_margin_end">10dp</dimen>
   <!-- Details fragment views -->
@@ -21,4 +21,8 @@
   <dimen name="shoe_item_name_margin_top">8dp</dimen>
   <dimen name="shoe_item_size_text_size">18sp</dimen>
   <dimen name="shoe_item_description_text_size">18sp</dimen>
+  <!-- Welcome Fragment -->
+  <dimen name="welcome_fragment_continue_text_size">22sp</dimen>
+  <dimen name="welcome_fragment_logo_height">330dp</dimen>
+  <dimen name="welcome_fragment_logo_width">300dp</dimen>
 </resources>

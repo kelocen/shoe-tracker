@@ -3,37 +3,42 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.welcome.WelcomeFragment">
+  <ScrollView style="@style/styleScrollViewWelcomeFragment">
 
-    <!-- Continue Button -->
-    <Button
-      android:id="@+id/button_continue"
-      style="@style/styleButtonContinue"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/text_welcome_message" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+      style="@style/styleConstraintLayoutWelcomeFragment"
+      tools:context=".ui.welcome.WelcomeFragment">
 
-    <!-- Welcome Message -->
-    <TextView
-      android:id="@+id/text_welcome_message"
-      style="@style/styleTextWelcomeMessage"
-      app:layout_constraintBottom_toTopOf="@id/button_continue"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/text_app_name" />
+      <!-- Continue Button -->
+      <Button
+        android:id="@+id/button_continue"
+        style="@style/styleButtonContinue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_continue_message" />
 
-    <!-- App Name-->
-    <TextView
-      android:id="@+id/text_app_name"
-      style="@style/styleTextAppName"
-      app:layout_constraintBottom_toTopOf="@id/text_welcome_message"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      <!-- Shoe Tracker Logo -->
+      <ImageView
+        android:id="@+id/image_shoe_inventory_logo"
+        style="@style/styleImageShoeTrackerLogo"
+        android:contentDescription="@string/shoe_tracker_logo"
+        app:layout_constraintBottom_toTopOf="@id/text_continue_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+      <!-- Continue Message -->
+      <TextView
+        android:id="@+id/text_continue_message"
+        style="@style/styleTextContinueMessage"
+        app:layout_constraintBottom_toTopOf="@id/button_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_shoe_inventory_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </ScrollView>
+
 </layout>
