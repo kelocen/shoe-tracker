@@ -4,15 +4,12 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    style="@style/styleConstraintLayoutListingFragment"
     tools:context=".ui.listing.ListingFragment">
 
     <!-- Shoe list scroll view -->
     <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      style="@style/styleScrollViewListingFragment"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +18,7 @@
       <!-- Shoe list layout -->
       <LinearLayout
         android:id="@+id/linear_layout_shoes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        style="@style/styleLinearLayoutListingFragment" />
     </ScrollView>
 
     <!-- Add shoes button -->
