@@ -5,8 +5,7 @@
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/layout_add_shoe"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/styleConstraintLayoutDetailsFragment"
     tools:context=".ui.details.DetailsFragment">
 
     <!-- Save Button -->
@@ -35,7 +34,7 @@
       android:text="@={shoe.name}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_size"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
       app:layout_constraintTop_toBottomOf="@id/edit_shoe_manufacturer"
       tools:ignore="LabelFor" />
 
@@ -47,7 +46,7 @@
       android:text="@={Converter.doubleToString(shoe.size)}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_description"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
       app:layout_constraintTop_toBottomOf="@id/edit_shoe_name"
       tools:ignore="LabelFor" />
 
@@ -59,7 +58,7 @@
       android:text="@={shoe.manufacturer}"
       app:layout_constraintBottom_toTopOf="@+id/edit_shoe_name"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
       app:layout_constraintTop_toTopOf="parent"
       tools:ignore="LabelFor" />
 
@@ -71,7 +70,7 @@
       android:text="@={shoe.description}"
       app:layout_constraintBottom_toTopOf="@+id/button_save"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
       app:layout_constraintTop_toBottomOf="@+id/edit_shoe_size"
       tools:ignore="LabelFor" />
 
@@ -80,32 +79,38 @@
       android:id="@+id/text_shoe_name_label"
       style="@style/styleTextShoeName"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_name"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_manufacturer" />
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toTopOf="@+id/edit_shoe_name" />
 
     <!-- Shoe Size Label -->
     <TextView
       android:id="@+id/text_shoe_size_label"
       style="@style/styleTextShoeSize"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_size"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_name" />
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toTopOf="@+id/edit_shoe_size" />
 
     <!-- Company Name Label -->
     <TextView
       android:id="@+id/text_manufacturer_label"
       style="@style/styleTextShoeManufacturer"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_manufacturer"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toTopOf="@+id/edit_shoe_manufacturer" />
 
     <!-- Shoe Description Label -->
     <TextView
       android:id="@+id/text_shoe_description_label"
       style="@style/styleTextShoeDescription"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_description"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_shoe_size" />
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toTopOf="@+id/edit_shoe_description" />
+
+    <!-- Divider -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      style="@style/styleGuidelineDetailsFragment"
+      app:layout_constraintGuide_begin="150dp" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
