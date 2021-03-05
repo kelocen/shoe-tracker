@@ -23,13 +23,17 @@
   <!-- Shoe Item-->
   <string name="item_default_text_shoe_manufacturer">Converse</string>
   <string name="item_default_text_shoe_name">Chuck Taylor All-Stars</string>
-  <string name="item_label_text_shoe_size">Size:</string>
+  <string name="item_label_shoe_size">Size:</string>
   <string name="item_default_text_shoe_size">9.0</string>
   <string name="item_label_shoe_description">Description:</string>
   <string name="item_default_text_shoe_description">Canvas low-top sneakers</string>
   <!-- Details Fragment -->
   <string name="details_action_save">Save</string>
   <string name="details_action_cancel">Cancel</string>
+  <string name="details_label_shoe_manufacturer">Brand/Manufacturer:</string>
+  <string name="details_label_shoe_name">Name/Model:</string>
+  <string name="details_label_shoe_size">Size:</string>
+  <string name="details_label_shoe_description">Description:</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
 </resources>

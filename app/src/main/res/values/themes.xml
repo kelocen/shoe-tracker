@@ -174,19 +174,19 @@
   </style>
   <!-- Manufacturer Label -->
   <style name="styleTextShoeManufacturer" parent="styleTextParentLabel">
-    <item name="android:text">Brand/Manufacturer:</item>
+    <item name="android:text">@string/details_label_shoe_manufacturer</item>
   </style>
   <!-- Shoe Name Label -->
   <style name="styleTextShoeName" parent="styleTextParentLabel">
-    <item name="android:text">Name/Model:</item>
+    <item name="android:text">@string/details_label_shoe_name</item>
   </style>
   <!-- Shoe Size Label -->
   <style name="styleTextShoeSize" parent="styleTextParentLabel">
-    <item name="android:text">Size:</item>
+    <item name="android:text">@string/details_label_shoe_size</item>
   </style>
   <!-- Shoe Description Label -->
   <style name="styleTextShoeDescription" parent="styleTextParentLabel">
-    <item name="android:text">Description:</item>
+    <item name="android:text">@string/details_label_shoe_description</item>
   </style>
   <!-- Edit Text View -->
   <style name="styleEditParentInput" parent="Theme.ShoeStoreInventory">
@@ -262,7 +262,7 @@
   <!-- Shoe Item Size Label -->
   <style name="styleTextShoeItemSizeLabel" parent="styleTextShoeItem">
     <item name="android:textSize">@dimen/item_label_size_text_size</item>
-    <item name="android:text">@string/item_label_text_shoe_size</item>
+    <item name="android:text">@string/item_label_shoe_size</item>
     <item name="android:layout_marginTop">@dimen/item_label_size_margin_top</item>
   </style>
   <!-- Shoe Item Size -->
