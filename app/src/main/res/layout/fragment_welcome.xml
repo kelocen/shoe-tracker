@@ -22,7 +22,7 @@
       <ImageView
         android:id="@+id/image_shoe_inventory_logo"
         style="@style/styleImageShoeTrackerLogo"
-        android:contentDescription="@string/shoe_tracker_logo"
+        android:contentDescription="@string/welcome_shoe_tracker_logo"
         app:layout_constraintBottom_toTopOf="@id/text_continue_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

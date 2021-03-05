@@ -69,7 +69,7 @@ class ListingFragment : Fragment() {
             val noShoes = TextView(context)
             noShoes.textSize = 24.0F
             noShoes.gravity = 1
-            noShoes.text = getString(R.string.message_no_shoes_added)
+            noShoes.text = getString(R.string.listing_message_no_shoes_added)
             shoesLayout.addView(noShoes)
         } else {
             for (shoe: Shoe in shoes) {

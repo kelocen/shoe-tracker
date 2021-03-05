@@ -28,8 +28,8 @@
     <EditText
       android:id="@+id/edit_password"
       style="@style/styleEditLoginFragment"
-      android:autofillHints="@string/prompt_password"
-      android:hint="@string/prompt_password"
+      android:autofillHints="@string/login_prompt_password"
+      android:hint="@string/login_prompt_password"
       android:inputType="textPassword"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +39,9 @@
     <EditText
       android:id="@+id/edit_username"
       style="@style/styleEditLoginFragment"
-      android:autofillHints="@string/prompt_email"
-      android:hint="@string/prompt_email"
-      android:imeActionLabel="@string/action_login"
+      android:autofillHints="@string/login_prompt_email"
+      android:hint="@string/login_prompt_email"
+      android:imeActionLabel="@string/login_action_login"
       android:inputType="textEmailAddress"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"

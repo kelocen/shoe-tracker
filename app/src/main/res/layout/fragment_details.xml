@@ -76,7 +76,7 @@
 
     <!-- Shoe Name Label -->
     <TextView
-      android:id="@+id/text_shoe_name_label"
+      android:id="@+id/text_details_shoe_name_label"
       style="@style/styleTextShoeName"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_name"
       app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -84,7 +84,7 @@
 
     <!-- Shoe Size Label -->
     <TextView
-      android:id="@+id/text_shoe_size_label"
+      android:id="@+id/text_details_shoe_size_label"
       style="@style/styleTextShoeSize"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_size"
       app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -92,7 +92,7 @@
 
     <!-- Company Name Label -->
     <TextView
-      android:id="@+id/text_manufacturer_label"
+      android:id="@+id/text_details_manufacturer_label"
       style="@style/styleTextShoeManufacturer"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_manufacturer"
       app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -100,7 +100,7 @@
 
     <!-- Shoe Description Label -->
     <TextView
-      android:id="@+id/text_shoe_description_label"
+      android:id="@+id/text_details_shoe_description_label"
       style="@style/styleTextShoeDescription"
       app:layout_constraintBottom_toBottomOf="@+id/edit_shoe_description"
       app:layout_constraintEnd_toStartOf="@+id/guideline"

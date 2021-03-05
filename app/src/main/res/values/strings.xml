@@ -1,32 +1,35 @@
 <resources>
   <string name="app_name">Shoe Tracker</string>
   <!-- Navigation Graph -->
-  <string name="label_login_fragment">Login</string>
-  <string name="label_welcome_fragment">Welcome</string>
-  <string name="label_instructions_fragment">Instructions Fragment</string>
-  <string name="label_listing_fragment">Listing Fragment</string>
-  <string name="label_details_fragment">Details Fragment</string>
+  <string name="graph_label_login_fragment">Login</string>
+  <string name="graph_label_welcome_fragment">Welcome</string>
+  <string name="graph_label_instructions_fragment">Instructions Fragment</string>
+  <string name="graph_label_listing_fragment">Listing</string>
+  <string name="graph_label_details_fragment">Details Fragment</string>
   <!-- Login Fragment -->
-  <string name="action_login">Login</string>
-  <string name="action_register">Register</string>
-  <string name="prompt_password">Password</string>
-  <string name="prompt_email">Email</string>
+  <string name="login_action_login">Login</string>
+  <string name="login_action_register">Register</string>
+  <string name="login_prompt_password">Password</string>
+  <string name="login_prompt_email">Email</string>
   <!-- Welcome Fragment -->
-  <string name="message_continue">Click continue to get started.</string>
-  <string name="shoe_tracker_logo">Shoe Tracker logo</string>
+  <string name="welcome_message_continue">Click continue to get started.</string>
+  <string name="welcome_shoe_tracker_logo">Shoe Tracker logo</string>
   <!-- Instructions Fragment -->
-  <string name="text_instructions_message">Instructions</string>
+  <string name="instructions_text_instructions_message">Instructions</string>
   <!-- Listing Fragment -->
-  <string name="desc_add_shoes">Add shoes</string>
-  <string name="action_logout">Logout</string>
-  <string name="label_shoe_manufacturer">Manufacturer</string>
-  <string name="label_shoe_name">Name</string>
-  <string name="label_shoe_size">Size</string>
-  <string name="label_shoe_description">Description</string>
-  <string name="message_no_shoes_added">No shoes have been added yet!</string>
+  <string name="listing_button_description_add_shoes">Add shoes</string>
+  <string name="listing_action_logout">Logout</string>
+  <string name="listing_message_no_shoes_added">No shoes have been added yet!</string>
+  <!-- Shoe Item-->
+  <string name="item_default_text_shoe_manufacturer">Converse</string>
+  <string name="item_default_text_shoe_name">Chuck Taylor All-Stars</string>
+  <string name="item_label_text_shoe_size">Size:</string>
+  <string name="item_default_text_shoe_size">9.0</string>
+  <string name="item_label_shoe_description">Description:</string>
+  <string name="item_default_text_shoe_description">Canvas low-top sneakers</string>
+  <!-- Details Fragment -->
+  <string name="details_action_save">Save</string>
+  <string name="details_action_cancel">Cancel</string>
   <!-- Shared Strings -->
   <string name="action_continue">Continue</string>
-  <!-- Details Fragment -->
-  <string name="action_save">Save</string>
-  <string name="action_cancel">Cancel</string>
 </resources>

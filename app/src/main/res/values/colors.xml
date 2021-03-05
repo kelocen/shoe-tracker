@@ -6,4 +6,7 @@
   <color name="color_secondary">#0277bd</color>
   <color name="color_secondary_light">#58a5f0</color>
   <color name="color_screen_background">#DFDFDF</color>
+  <color name="color_cardview_background">#E4E4E4</color>
+  <color name="color_cardview_shape_top">#D3D3D3</color>
+  <color name="color_cardview_shape_start">#D8D8D8</color>
 </resources>

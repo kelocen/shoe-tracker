@@ -44,14 +44,14 @@
     <item name="android:layout_height">match_parent</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:background">@color/color_screen_background</item>
-    <item name="android:paddingStart">@dimen/fragment_constraint_layout_padding</item>
-    <item name="android:paddingEnd">@dimen/fragment_constraint_layout_padding</item>
+    <item name="android:paddingStart">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
   </style>
   <!-- LoginFragment edit text fields -->
   <style name="styleEditLoginFragment" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginTop">@dimen/login_fragment_view_margin_top</item>
+    <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
     <item name="android:imeOptions">actionDone</item>
     <item name="android:selectAllOnFocus">true</item>
     <item name="android:textAlignment">center</item>
@@ -60,17 +60,17 @@
   <style name="styleButtonParentLoginFragment" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginTop">@dimen/login_fragment_view_margin_top</item>
+    <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
     <item name="android:enabled">true</item>
     <item name="android:textAllCaps">true</item>
   </style>
   <!-- Login button -->
   <style name="styleButtonLogin" parent="styleButtonParentLoginFragment">
-    <item name="android:text">@string/action_login</item>
+    <item name="android:text">@string/login_action_login</item>
   </style>
   <!-- Register button -->
   <style name="styleButtonRegister" parent="styleButtonParentLoginFragment">
-    <item name="android:text">@string/action_register</item>
+    <item name="android:text">@string/login_action_register</item>
   </style>
   <!-- = = = = = Welcome Fragment = = = = = -->
   <!-- Scroll View -->
@@ -79,8 +79,8 @@
     <item name="android:layout_width">match_parent</item>
     <item name="android:fillViewport">true</item>
     <item name="android:background">@color/color_screen_background</item>
-    <item name="android:paddingStart">@dimen/fragment_constraint_layout_padding</item>
-    <item name="android:paddingEnd">@dimen/fragment_constraint_layout_padding</item>
+    <item name="android:paddingStart">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
   </style>
   <!-- Constraint Layout -->
   <style name="styleConstraintLayoutWelcomeFragment">
@@ -89,8 +89,8 @@
   </style>
   <!-- Shoe Tracker Logo -->
   <style name="styleImageShoeTrackerLogo" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_height">@dimen/welcome_fragment_logo_height</item>
-    <item name="android:layout_width">@dimen/welcome_fragment_logo_width</item>
+    <item name="android:layout_height">@dimen/welcome_logo_height</item>
+    <item name="android:layout_width">@dimen/welcome_logo_width</item>
     <item name="android:scaleType">fitCenter</item>
     <item name="android:src">@drawable/shoe_tracker_logo</item>
     <!--
@@ -106,22 +106,24 @@
   <style name="styleTextContinueMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/message_continue</item>
-    <item name="android:textSize">@dimen/welcome_fragment_continue_text_size</item>
+    <item name="android:text">@string/welcome_message_continue</item>
+    <item name="android:textSize">@dimen/welcome_continue_text_size</item>
   </style>
   <!-- = = = = = Instructions Fragment = = = = = -->
   <!-- Instructions TextView -->
   <style name="styleTextInstructionsMessage" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:text">@string/text_instructions_message</item>
+    <item name="android:text">@string/instructions_text_instructions_message</item>
   </style>
   <!-- = = = = = Listing Fragment = = = = = -->
   <!-- Constraint Layout -->
   <style name="styleConstraintLayoutListingFragment" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
-    <item name="android:layout_margin">@dimen/listing_constraint_layout_margin</item>
+    <item name="android:paddingStart">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:background">@color/color_screen_background</item>
   </style>
   <!-- Scroll View -->
   <style name="styleScrollViewListingFragment" parent="Theme.ShoeStoreInventory">
@@ -138,8 +140,7 @@
   <style name="styleFloatingButtonAdd" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginBottom">@dimen/floating_button_margin_bottom</item>
-    <item name="android:layout_marginEnd">@dimen/floating_button_margin_end</item>
+    <item name="android:layout_marginBottom">@dimen/listing_floating_button_margin_bottom</item>
     <item name="android:src">@drawable/ic_add_button</item>
   </style>
   <!-- = = = = = Details Fragment = = = = = -->
@@ -156,12 +157,12 @@
   </style>
   <!-- Save Button -->
   <style name="styleButtonSave" parent="styleButtonParent">
-    <item name="android:text">@string/action_save</item>
+    <item name="android:text">@string/details_action_save</item>
     <item name="android:layout_marginBottom">@dimen/details_buttons_margin_bottom</item>
   </style>
   <!-- Cancel Button -->
   <style name="styleButtonCancel" parent="styleButtonParent">
-    <item name="android:text">@string/action_cancel</item>
+    <item name="android:text">@string/details_action_cancel</item>
     <item name="android:layout_marginBottom">@dimen/details_buttons_margin_bottom</item>
   </style>
   <!-- Label Text View -->
@@ -212,31 +213,78 @@
     <item name="android:inputType">text</item>
   </style>
   <!-- = = = = = Shoe Item Layout = = = = = -->
+  <!-- Constraint Layout -->
+  <style name="styleConstraintLayoutShoeItem" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/color_screen_background</item>
+  </style>
+  <!-- Cardview -->
+  <style name="styleCardviewShoeItem" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_marginBottom">@dimen/item_cardview_bottom_margin</item>
+    <item name="android:elevation">@dimen/item_cardview_elevation</item>
+    <item name="android:gravity">center</item>
+    <item name="android:backgroundTint">@color/color_cardview_background</item>
+  </style>
+  <!-- CardView Background Square-->
+  <style name="styleImageCardViewShapeTop" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:layout_height">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:src">@drawable/shape_card_top</item>
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+  <!-- CardView Background Square-->
+  <style name="styleImageCardViewShapeStart" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:layout_height">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:src">@drawable/shape_card_start</item>
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+  <!-- Parent Shoe Item TextView -->
   <style name="styleTextShoeItem" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
   </style>
   <!-- Shoe Item Manufacturer -->
   <style name="styleTextShoeItemManufacturer" parent="styleTextShoeItem">
-    <item name="android:textSize">@dimen/shoe_item_manufacturer_text_size</item>
-    <item name="android:layout_marginTop">@dimen/shoe_item_manufacturer_margin_top</item>
-    <item name="android:text">@string/label_shoe_manufacturer</item>
+    <item name="android:textSize">@dimen/item_manufacturer_text_size</item>
+    <item name="android:text">@string/item_default_text_shoe_manufacturer</item>
+    <item name="android:layout_marginStart">@dimen/item_manufacturer_margin_start</item>
   </style>
   <!-- Shoe Item Name -->
   <style name="styleTextShoeItemName" parent="styleTextShoeItem">
-    <item name="android:textSize">@dimen/shoe_item_name_text_size</item>
-    <item name="android:layout_marginTop">@dimen/shoe_item_name_margin_top</item>
-    <item name="android:text">@string/label_shoe_name</item>
+    <item name="android:textSize">@dimen/item_name_text_size</item>
+    <item name="android:text">@string/item_default_text_shoe_name</item>
+    <item name="android:layout_marginStart">@dimen/item_name_margin_start</item>
+  </style>
+  <!-- Shoe Item Size Label -->
+  <style name="styleTextShoeItemSizeLabel" parent="styleTextShoeItem">
+    <item name="android:textSize">@dimen/item_label_size_text_size</item>
+    <item name="android:text">@string/item_label_text_shoe_size</item>
+    <item name="android:layout_marginTop">@dimen/item_label_size_margin_top</item>
   </style>
   <!-- Shoe Item Size -->
   <style name="styleTextShoeItemSize" parent="styleTextShoeItem">
-    <item name="android:textSize">@dimen/shoe_item_size_text_size</item>
-    <item name="android:text">@string/label_shoe_size</item>
+    <item name="android:textSize">@dimen/item_size_text_size</item>
+    <item name="android:text">@string/item_default_text_shoe_size</item>
+  </style>
+  <!-- Shoe Item Description Label -->
+  <style name="styleTextShoeItemDescriptionLabel" parent="styleTextShoeItem">
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:textSize">@dimen/item_description_text_size</item>
+    <item name="android:text">@string/item_label_shoe_description</item>
+    <item name="android:layout_marginStart">@dimen/item_description_label_margin_start</item>
+    <item name="android:layout_marginTop">@dimen/item_description_label_margin_top</item>
   </style>
   <!-- Shoe Item Description -->
   <style name="styleTextShoeItemDescription" parent="styleTextShoeItem">
-    <item name="android:textSize">@dimen/shoe_item_description_text_size</item>
-    <item name="android:text">@string/label_shoe_description</item>
+    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:textSize">@dimen/item_description_text_size</item>
+    <item name="android:text">@string/item_default_text_shoe_description</item>
+    <item name="android:layout_marginStart">@dimen/item_description_margin_start_end</item>
+    <item name="android:layout_marginEnd">@dimen/item_description_margin_start_end</item>
   </style>
   <!-- = = = = = Shared Styles = = = = = -->
   <!-- App Name TextView -->

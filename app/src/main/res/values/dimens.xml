@@ -1,26 +1,41 @@
 <resources>
-  <!-- General values -->
+  <!-- = = = = General values = = = = -->
   <dimen name="general_dimen_zero_height_width">0dp</dimen>
-  <dimen name="fragment_constraint_layout_padding">16dp</dimen>
-  <!-- Login fragment views-->
-  <dimen name="login_fragment_view_margin_top">8dp</dimen>
-  <!-- Welcome Fragment -->
-  <dimen name="welcome_fragment_continue_text_size">22sp</dimen>
-  <dimen name="welcome_fragment_logo_height">197dp</dimen>
-  <dimen name="welcome_fragment_logo_width">330dp</dimen>
-  <!-- Listing fragment views -->
-  <dimen name="listing_constraint_layout_margin">16dp</dimen>
-  <dimen name="floating_button_margin_bottom">10dp</dimen>
-  <dimen name="floating_button_margin_end">10dp</dimen>
-  <!-- Details fragment views -->
+  <dimen name="fragment_parent_layout_padding">16dp</dimen>
+  <!-- = = = = Login fragment views = = = = -->
+  <dimen name="login_view_margin_top">8dp</dimen>
+  <!-- = = = = Welcome Fragment = = = = -->
+  <dimen name="welcome_continue_text_size">22sp</dimen>
+  <dimen name="welcome_logo_height">197dp</dimen>
+  <dimen name="welcome_logo_width">330dp</dimen>
+  <!-- = = = = Listing fragment views = = = = -->
+  <dimen name="listing_floating_button_margin_bottom">16dp</dimen>
+  <!-- = = = = Details fragment views = = = = -->
   <dimen name="details_label_margin_start">20dp</dimen>
   <dimen name="details_buttons_margin_bottom">70dp</dimen>
   <dimen name="details_edit_margin_start_end">20dp</dimen>
-  <!-- Shoe item layout views -->
-  <dimen name="shoe_item_manufacturer_margin_top">8dp</dimen>
-  <dimen name="shoe_item_manufacturer_text_size">18sp</dimen>
-  <dimen name="shoe_item_name_text_size">24sp</dimen>
-  <dimen name="shoe_item_name_margin_top">8dp</dimen>
-  <dimen name="shoe_item_size_text_size">18sp</dimen>
-  <dimen name="shoe_item_description_text_size">18sp</dimen>
+  <!-- = = = = Shoe item layout views = = = = -->
+  <!-- Manufacturer -->
+  <dimen name="item_manufacturer_margin_start">8dp</dimen>
+  <dimen name="item_manufacturer_text_size">16sp</dimen>
+  <!-- Name -->
+  <dimen name="item_name_text_size">16sp</dimen>
+  <dimen name="item_name_margin_start">16dp</dimen>
+  <!-- Size -->
+  <dimen name="item_size_text_size">28sp</dimen>
+  <dimen name="item_label_size_text_size">14dp</dimen>
+  <dimen name="item_label_size_margin_top">8dp</dimen>
+  <!-- Description -->
+  <dimen name="item_description_text_size">14sp</dimen>
+  <dimen name="item_description_margin_start_end">8dp</dimen>
+  <dimen name="item_description_label_margin_start">8dp</dimen>
+  <dimen name="item_description_label_margin_top">8dp</dimen>
+  <!-- CardView -->
+  <dimen name="item_cardview_bottom_margin">4dp</dimen>
+  <dimen name="item_cardview_elevation">8dp</dimen>
+  <dimen name="item_cardview_corner_radius">5dp</dimen>
+  <dimen name="item_cardview_top_shape_height">50dp</dimen>
+  <dimen name="item_cardview_top_shape_width">50dp</dimen>
+  <dimen name="item_cardview_start_shape_height">50dp</dimen>
+  <dimen name="item_cardview_start_shape_width">50dp</dimen>
 </resources>
