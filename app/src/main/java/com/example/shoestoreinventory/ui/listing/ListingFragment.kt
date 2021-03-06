@@ -24,6 +24,7 @@ class ListingFragment : Fragment() {
 
     private val shoeViewModel: ShoeViewModel by activityViewModels()
     private lateinit var binding: FragmentListingBinding
+    private lateinit var itemBinding: ShoeItemBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -73,9 +74,10 @@ class ListingFragment : Fragment() {
             shoesLayout.addView(noShoes)
         } else {
             for (shoe: Shoe in shoes) {
-                val shoeItemBinding = ShoeItemBinding.inflate(layoutInflater, null, false)
-                shoeItemBinding.shoe = shoe
-                shoesLayout.addView(shoeItemBinding.root)
+                itemBinding =
+                    DataBindingUtil.inflate(layoutInflater, R.layout.shoe_item, null, false)
+                itemBinding.shoe = shoe
+                shoesLayout.addView(itemBinding.root)
             }
         }
     }
