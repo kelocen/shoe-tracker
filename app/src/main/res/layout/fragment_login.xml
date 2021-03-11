@@ -5,7 +5,7 @@
 
   <!-- Login Constraint Layout -->
   <androidx.constraintlayout.widget.ConstraintLayout
-    style="@style/styleConstraintLayoutLoginFragment"
+    style="@style/styleParentLayout"
     tools:context=".ui.login.LoginFragment">
 
     <!-- Login Button -->
@@ -27,7 +27,7 @@
     <!-- Password EditText Field -->
     <EditText
       android:id="@+id/edit_password"
-      style="@style/styleEditLoginFragment"
+      style="@style/styleEditPasswordLoginFragment"
       android:autofillHints="@string/login_prompt_password"
       android:hint="@string/login_prompt_password"
       android:inputType="textPassword"
@@ -38,7 +38,7 @@
     <!-- Username EditText Field -->
     <EditText
       android:id="@+id/edit_username"
-      style="@style/styleEditLoginFragment"
+      style="@style/styleEditEmailLoginFragment"
       android:autofillHints="@string/login_prompt_email"
       android:hint="@string/login_prompt_email"
       android:imeActionLabel="@string/login_action_login"

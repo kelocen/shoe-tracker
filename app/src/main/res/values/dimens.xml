@@ -2,12 +2,27 @@
   <!-- = = = = General values = = = = -->
   <dimen name="general_dimen_zero_height_width">0dp</dimen>
   <dimen name="fragment_parent_layout_padding">16dp</dimen>
+  <dimen name="button_continue_margin_bottom">16dp</dimen>
+  <dimen name="button_continue_margin_top">70dp</dimen>
   <!-- = = = = Login fragment views = = = = -->
   <dimen name="login_view_margin_top">8dp</dimen>
   <!-- = = = = Welcome Fragment = = = = -->
   <dimen name="welcome_continue_text_size">22sp</dimen>
   <dimen name="welcome_logo_height">197dp</dimen>
   <dimen name="welcome_logo_width">330dp</dimen>
+  <dimen name="welcome_logo_margin_top">40dp</dimen>
+  <dimen name="welcome_continue_message_margin_top">60dp</dimen>
+  <!-- = = = = Instructions Fragment = = = = -->
+  <dimen name="instructions_title_text_size">24sp</dimen>
+  <dimen name="instructions_step_label_text_size">20sp</dimen>
+  <dimen name="instructions_step_label_margin_top">30dp</dimen>
+  <dimen name="instructions_step_message_text_size">16sp</dimen>
+  <dimen name="instructions_step_two_margin_top">30dp</dimen>
+  <dimen name="instructions_view_separator_margin_top">12dp</dimen>
+  <dimen name="instructions_image_step_one_height">230dp</dimen>
+  <dimen name="instructions_image_step_one_width">200dp</dimen>
+  <dimen name="instructions_image_step_two_width">200dp</dimen>
+  <dimen name="instructions_image_step_two_height">320dp</dimen>
   <!-- = = = = Listing fragment views = = = = -->
   <dimen name="listing_floating_button_margin_bottom">16dp</dimen>
   <!-- = = = = Details fragment views = = = = -->
