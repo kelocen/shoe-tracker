@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.*
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -71,6 +73,8 @@ class ListingFragment : Fragment() {
             noShoes.textSize = 24.0F
             noShoes.gravity = 1
             noShoes.text = getString(R.string.listing_message_no_shoes_added)
+            noShoes.setTextColor(ContextCompat.getColor(noShoes.context, R.color.black))
+            noShoes.typeface = ResourcesCompat.getFont(noShoes.context, R.font.gudea_bold)
             shoesLayout.addView(noShoes)
         } else {
             for (shoe: Shoe in shoes) {

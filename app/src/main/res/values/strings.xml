@@ -5,7 +5,7 @@
   <string name="graph_label_welcome_fragment">Welcome</string>
   <string name="graph_label_instructions_fragment">Instructions</string>
   <string name="graph_label_listing_fragment">Listing</string>
-  <string name="graph_label_details_fragment">Details Fragment</string>
+  <string name="graph_label_details_fragment">Details</string>
   <!-- Login Fragment -->
   <string name="login_action_login">Login</string>
   <string name="login_action_register">Register</string>
