@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      tools:context=".ui.instructions.InstructionsFragment">
+      tools:context=".ui.instructions.StepOneFragment">
 
       <!-- Continue Button -->
       <Button
@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_step_two_message" />
+        app:layout_constraintTop_toBottomOf="@+id/text_step_one_message" />
 
       <!-- Step One Image -->
       <ImageView
@@ -27,15 +27,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_step_one" />
-
-      <!-- Step Two Image -->
-      <ImageView
-        android:id="@+id/image_step_two"
-        style="@style/styleImageStepTwoInstructionsFragment"
-        android:contentDescription="@string/example_of_saving_a_shoe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_step_two" />
 
       <!-- Step One -->
       <TextView
@@ -49,8 +40,9 @@
       <TextView
         android:id="@+id/text_step_one_message"
         style="@style/styleTextStepOneMessageInstructionsFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/image_step_one"
+        app:layout_constraintStart_toStartOf="@+id/image_step_one"
         app:layout_constraintTop_toBottomOf="@+id/image_step_one" />
 
       <!-- How-to -->
@@ -60,22 +52,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-      <!-- Step Two -->
-      <TextView
-        android:id="@+id/text_step_two"
-        style="@style/styleTextStepTwoInstructionsFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_step_one_message" />
-
-      <!-- Step Two Message-->
-      <TextView
-        android:id="@+id/text_step_two_message"
-        style="@style/styleTextStepTwoMessageInstructionsFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_step_two" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
   </ScrollView>

@@ -3,7 +3,8 @@
   <!-- Navigation Graph -->
   <string name="graph_label_login_fragment">Login</string>
   <string name="graph_label_welcome_fragment">Welcome</string>
-  <string name="graph_label_instructions_fragment">Instructions</string>
+  <string name="graph_label_step_one_fragment">Instructions: Step 1</string>
+  <string name="graph_label_step_two_fragment">Instructions: Step 2</string>
   <string name="graph_label_listing_fragment">Listing</string>
   <string name="graph_label_details_fragment">Details</string>
   <!-- Login Fragment -->
@@ -12,12 +13,14 @@
   <string name="login_prompt_password">Password</string>
   <string name="login_prompt_email">Email</string>
   <!-- Welcome Fragment -->
-  <string name="welcome_message_continue">Click continue to get started.</string>
+  <string name="welcome_message_continue">Tap continue to get started.</string>
   <string name="welcome_shoe_tracker_logo">Shoe Tracker logo</string>
   <!-- Instructions Fragment -->
   <string name="instructions_text_title_text">How to use Shoe tracker:</string>
   <string name="instructions_label_step_one">Step 1.</string>
   <string name="instructions_label_step_two">Step 2.</string>
+  <string name="instructions_text_step_one">Tap the add button on the Listing screen.</string>
+  <string name="instructions_text_step_two">Fill in the blanks and tap save.</string>
   <string name="example_of_the_add_button">Example of the add button.</string>
   <string name="example_of_saving_a_shoe">Example of saving a shoe.</string>
   <!-- Listing Fragment -->

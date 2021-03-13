@@ -21,15 +21,24 @@
     android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment">
     <action
       android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
-      app:destination="@+id/fragment_InstructionsFragment" />
+      app:destination="@+id/fragment_StepOneFragment" />
   </fragment>
-  <!-- Instructions Fragment -->
+  <!-- Step One Fragment -->
   <fragment
-    android:id="@+id/fragment_InstructionsFragment"
-    android:label="@string/graph_label_instructions_fragment"
-    android:name="com.example.shoestoreinventory.ui.instructions.InstructionsFragment">
+    android:id="@+id/fragment_StepOneFragment"
+    android:label="@string/graph_label_step_one_fragment"
+    android:name="com.example.shoestoreinventory.ui.instructions.StepOneFragment">
     <action
-      android:id="@+id/action_InstructionsFragment_to_ListingFragment"
+      android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
+      app:destination="@+id/fragment_StepTwoFragment" />
+  </fragment>
+  <!-- Step Two Fragment -->
+  <fragment
+    android:id="@+id/fragment_StepTwoFragment"
+    android:label="@string/graph_label_step_two_fragment"
+    android:name="com.example.shoestoreinventory.ui.instructions.StepTwoFragment">
+    <action
+      android:id="@+id/action_StepTwoFragment_to_ListingFragment"
       app:destination="@+id/fragment_ListingFragment"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
@@ -42,7 +51,6 @@
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
       app:destination="@+id/fragment_DetailsFragment" />
-
   </fragment>
   <!-- Details Fragment -->
   <fragment

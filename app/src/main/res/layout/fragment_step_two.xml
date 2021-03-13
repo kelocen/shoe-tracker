@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <ScrollView style="@style/styleScrollViewInstructionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".ui.instructions.StepTwoFragment">
+
+      <!-- Continue Button -->
+      <Button
+        android:id="@+id/button_continue"
+        style="@style/styleButtonContinue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_step_two_message" />
+
+      <!-- Step Two Image -->
+      <ImageView
+        android:id="@+id/image_step_two"
+        style="@style/styleImageStepTwoInstructionsFragment"
+        android:contentDescription="@string/example_of_saving_a_shoe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_step_two" />
+
+      <!-- How-to -->
+      <TextView
+        android:id="@+id/text_how_to"
+        style="@style/styleTextHowToInstructionsFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <!-- Step Two -->
+      <TextView
+        android:id="@+id/text_step_two"
+        style="@style/styleTextStepTwoInstructionsFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_how_to" />
+
+      <!-- Step Two Message-->
+      <TextView
+        android:id="@+id/text_step_two_message"
+        style="@style/styleTextStepTwoMessageInstructionsFragment"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/image_step_two"
+        app:layout_constraintStart_toStartOf="@id/image_step_two"
+        app:layout_constraintTop_toBottomOf="@+id/image_step_two" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+</layout>

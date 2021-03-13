@@ -107,7 +107,7 @@
     <item name="android:text">@string/welcome_message_continue</item>
     <item name="android:textSize">@dimen/welcome_continue_text_size</item>
   </style>
-  <!-- = = = = = Instructions Fragment = = = = = -->
+  <!-- = = = = = Step One/Step Two Fragments = = = = = -->
   <style name="styleScrollViewInstructionsFragment" parent="styleParentLayout">
     <item name="android:fillViewport">true</item>
   </style>
@@ -133,7 +133,7 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_message_text_size</item>
-    <item name="android:text">Click the add button on the Listing screen.</item>
+    <item name="android:text">@string/instructions_text_step_one</item>
     <item name="android:layout_marginTop">@dimen/instructions_view_separator_margin_top</item>
   </style>
   <!-- Step One Image -->
@@ -157,7 +157,7 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_message_text_size</item>
-    <item name="android:text">Fill in the blanks and click save.</item>
+    <item name="android:text">@string/instructions_text_step_two</item>
     <item name="android:layout_marginTop">@dimen/instructions_view_separator_margin_top</item>
   </style>
   <!-- Step Two Image -->

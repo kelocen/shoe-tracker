@@ -4,6 +4,7 @@
   <dimen name="fragment_parent_layout_padding">16dp</dimen>
   <dimen name="button_continue_margin_bottom">16dp</dimen>
   <dimen name="button_continue_margin_top">70dp</dimen>
+
   <!-- = = = = Login fragment views = = = = -->
   <dimen name="login_view_margin_top">8dp</dimen>
   <!-- = = = = Welcome Fragment = = = = -->
@@ -16,9 +17,9 @@
   <dimen name="instructions_title_text_size">24sp</dimen>
   <dimen name="instructions_step_label_text_size">20sp</dimen>
   <dimen name="instructions_step_label_margin_top">30dp</dimen>
-  <dimen name="instructions_step_message_text_size">16sp</dimen>
+  <dimen name="instructions_step_message_text_size">20sp</dimen>
   <dimen name="instructions_step_two_margin_top">30dp</dimen>
-  <dimen name="instructions_view_separator_margin_top">12dp</dimen>
+  <dimen name="instructions_view_separator_margin_top">25dp</dimen>
   <dimen name="instructions_image_step_one_height">230dp</dimen>
   <dimen name="instructions_image_step_one_width">200dp</dimen>
   <dimen name="instructions_image_step_two_width">200dp</dimen>

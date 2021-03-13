@@ -8,27 +8,27 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.shoestoreinventory.R
-import com.example.shoestoreinventory.databinding.FragmentInstructionsBinding
+import com.example.shoestoreinventory.databinding.FragmentStepOneBinding
 
 /**
  * A [Fragment] subclass for the instructions screen.
  */
-class InstructionsFragment : Fragment() {
+class StepOneFragment : Fragment() {
 
-    private lateinit var binding: FragmentInstructionsBinding
+    private lateinit var binding: FragmentStepOneBinding
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_instructions, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_step_one, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonContinue.setOnClickListener {
-            findNavController().navigate(R.id.action_InstructionsFragment_to_ListingFragment)
+            findNavController().navigate(R.id.action_StepOneFragment_to_StepTwoFragment)
         }
     }
 }
