@@ -4,7 +4,6 @@
   <dimen name="fragment_parent_layout_padding">16dp</dimen>
   <dimen name="button_continue_margin_bottom">16dp</dimen>
   <dimen name="button_continue_margin_top">70dp</dimen>
-
   <!-- = = = = Login fragment views = = = = -->
   <dimen name="login_view_margin_top">8dp</dimen>
   <!-- = = = = Welcome Fragment = = = = -->

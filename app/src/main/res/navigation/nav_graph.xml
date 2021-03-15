@@ -10,6 +10,8 @@
     android:name="com.example.shoestoreinventory.ui.login.LoginFragment">
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
+      app:enterAnim="@anim/fragment_open_enter"
+      app:exitAnim="@anim/fragment_open_exit"
       app:destination="@id/fragment_WelcomeFragment"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
@@ -21,6 +23,10 @@
     android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment">
     <action
       android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
+      app:enterAnim="@anim/fragment_fade_enter"
+      app:exitAnim="@anim/fragment_fade_exit"
+      app:popEnterAnim="@anim/fragment_fade_enter"
+      app:popExitAnim="@anim/fragment_fade_exit"
       app:destination="@+id/fragment_StepOneFragment" />
   </fragment>
   <!-- Step One Fragment -->
@@ -30,6 +36,10 @@
     android:name="com.example.shoestoreinventory.ui.instructions.StepOneFragment">
     <action
       android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
+      app:enterAnim="@anim/fragment_fade_enter"
+      app:exitAnim="@anim/fragment_fade_exit"
+      app:popEnterAnim="@anim/fragment_fade_enter"
+      app:popExitAnim="@anim/fragment_fade_exit"
       app:destination="@+id/fragment_StepTwoFragment" />
   </fragment>
   <!-- Step Two Fragment -->
@@ -40,6 +50,8 @@
     <action
       android:id="@+id/action_StepTwoFragment_to_ListingFragment"
       app:destination="@+id/fragment_ListingFragment"
+      app:enterAnim="@anim/fragment_fade_enter"
+      app:exitAnim="@anim/fragment_fade_exit"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
   </fragment>
@@ -50,6 +62,10 @@
     android:name="com.example.shoestoreinventory.ui.listing.ListingFragment">
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
+      app:enterAnim="@anim/fragment_fade_enter"
+      app:exitAnim="@anim/fragment_fade_exit"
+      app:popEnterAnim="@anim/fragment_fade_enter"
+      app:popExitAnim="@anim/fragment_fade_exit"
       app:destination="@+id/fragment_DetailsFragment" />
   </fragment>
   <!-- Details Fragment -->
@@ -59,9 +75,15 @@
     android:name="com.example.shoestoreinventory.ui.details.DetailsFragment">
     <action
       android:id="@+id/action_cancel_DetailsFragment_to_ListingFragment"
+      app:enterAnim="@anim/fragment_close_enter"
+      app:exitAnim="@anim/fragment_close_exit"
+      app:popUpTo="@id/fragment_ListingFragment"
       app:destination="@+id/fragment_ListingFragment" />
     <action
       android:id="@+id/action_save_DetailsFragment_to_ListingFragment"
+      app:enterAnim="@anim/fragment_fade_enter"
+      app:exitAnim="@anim/fragment_fade_exit"
+      app:popUpTo="@id/fragment_ListingFragment"
       app:destination="@+id/fragment_ListingFragment" />
   </fragment>
 </navigation>
