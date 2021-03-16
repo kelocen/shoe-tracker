@@ -1,39 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
 
-  <!-- Login Constraint Layout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-    style="@style/styleParentLayout"
+  <!-- Login Linear Layout -->
+  <!--
+  Design Complexity: fragment_login
+  A Linear Layout is used for the Login screen because the items are
+  positioned in a single centered column.
+  -->
+  <LinearLayout
+    style="@style/styleLinearLayoutLoginFragment"
     tools:context=".ui.login.LoginFragment">
-
-    <!-- Login Button -->
-    <Button
-      android:id="@+id/button_login"
-      style="@style/styleButtonLogin"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_password" />
-
-    <!-- Register Button -->
-    <Button
-      android:id="@+id/button_register"
-      style="@style/styleButtonRegister"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/button_login" />
-
-    <!-- Password EditText Field -->
-    <EditText
-      android:id="@+id/edit_password"
-      style="@style/styleEditPasswordLoginFragment"
-      android:autofillHints="@string/login_prompt_password"
-      android:hint="@string/login_prompt_password"
-      android:inputType="textPassword"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/edit_username" />
 
     <!-- Username EditText Field -->
     <EditText
@@ -42,10 +19,25 @@
       android:autofillHints="@string/login_prompt_email"
       android:hint="@string/login_prompt_email"
       android:imeActionLabel="@string/login_action_login"
-      android:inputType="textEmailAddress"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      android:inputType="textEmailAddress" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Register Button -->
+    <EditText
+      android:id="@+id/edit_password"
+      style="@style/styleEditPasswordLoginFragment"
+      android:autofillHints="@string/login_prompt_password"
+      android:hint="@string/login_prompt_password"
+      android:inputType="textPassword" />
+
+    <!-- Password EditText Field -->
+    <Button
+      android:id="@+id/button_register"
+      style="@style/styleButtonRegister" />
+
+    <!-- Login Button -->
+    <Button
+      android:id="@+id/button_login"
+      style="@style/styleButtonLogin" />
+
+  </LinearLayout>
 </layout>

@@ -3,6 +3,11 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
 
+  <!--
+  Design Complexity: fragment_details
+  A Constraint Layout is used because the text, edit, and button views can be arranged
+  in two columns (relative to and independent of eachother) using a single view group.
+  -->
   <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/layout_add_shoe"
     style="@style/styleConstraintLayoutDetailsFragment"

@@ -5,54 +5,43 @@
 
   <ScrollView style="@style/styleScrollViewInstructionsFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+    <!-- Linear Layout -->
+    <!--
+    Design Complexity: fragment_step_two
+    A Linear Layout is used for the Instructions: Step Two screen because the items are
+    positioned in a single centered column.
+    -->
+    <LinearLayout
+      style="@style/styleLinearLayoutStepOneTwo"
       tools:context=".ui.instructions.StepTwoFragment">
 
-      <!-- Continue Button -->
-      <Button
-        android:id="@+id/button_continue"
-        style="@style/styleButtonContinue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_step_two_message" />
+      <!-- How-to -->
+      <TextView
+        android:id="@+id/text_how_to"
+        style="@style/styleTextHowToInstructionsFragment" />
+
+      <!-- Step Two -->
+      <TextView
+        android:id="@+id/text_step_two"
+        style="@style/styleTextStepTwoInstructionsFragment" />
 
       <!-- Step Two Image -->
       <ImageView
         android:id="@+id/image_step_two"
         style="@style/styleImageStepTwoInstructionsFragment"
-        android:contentDescription="@string/example_of_saving_a_shoe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_step_two" />
+        android:contentDescription="@string/example_of_saving_a_shoe" />
 
-      <!-- How-to -->
-      <TextView
-        android:id="@+id/text_how_to"
-        style="@style/styleTextHowToInstructionsFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-      <!-- Step Two -->
-      <TextView
-        android:id="@+id/text_step_two"
-        style="@style/styleTextStepTwoInstructionsFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_how_to" />
-
-      <!-- Step Two Message-->
+      <!-- Step Two Message -->
       <TextView
         android:id="@+id/text_step_two_message"
         style="@style/styleTextStepTwoMessageInstructionsFragment"
-        app:layout_constrainedWidth="true"
-        app:layout_constraintEnd_toEndOf="@id/image_step_two"
-        app:layout_constraintStart_toStartOf="@id/image_step_two"
-        app:layout_constraintTop_toBottomOf="@+id/image_step_two" />
+        app:layout_constrainedWidth="true" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+      <!-- Continue Button -->
+      <Button
+        android:id="@+id/button_continue"
+        style="@style/styleButtonContinue" />
+
+    </LinearLayout>
   </ScrollView>
 </layout>

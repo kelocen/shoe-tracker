@@ -3,31 +3,19 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
-    style="@style/styleConstraintLayoutActivityMain"
+  <!--
+  Design Complexity: activity_main
+  A Linear Layout is used for this layout because it only contains two
+  items in a single column.
+  -->
+  <LinearLayout
+    style="@style/styleLinearLayoutActivityMain"
     tools:context=".MainActivity">
-
-    <!-- Fragment Container -->
-    <androidx.fragment.app.FragmentContainerView
-      android:id="@+id/nav_host_fragment_container_main"
-      style="@style/styleFragmentContainerActivityMain"
-      app:defaultNavHost="true"
-      app:layout_constrainedHeight="true"
-      app:layout_constrainedWidth="true"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/app_bar_main"
-      app:navGraph="@navigation/nav_graph" />
 
     <!-- App Bar -->
     <com.google.android.material.appbar.AppBarLayout
       android:id="@+id/app_bar_main"
-      style="@style/styleAppBarActivityMain"
-      app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment_container_main"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+      style="@style/styleAppBarActivityMain">
 
       <!-- Toolbar -->
       <androidx.appcompat.widget.Toolbar
@@ -36,6 +24,13 @@
         app:popupTheme="@style/Theme.ShoeStoreInventory.PopupOverlay" />
     </com.google.android.material.appbar.AppBarLayout>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Fragment Container -->
+    <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/nav_host_fragment_container_main"
+      style="@style/styleFragmentContainerActivityMain"
+      app:defaultNavHost="true"
+      app:navGraph="@navigation/nav_graph" />
+
+  </LinearLayout>
 </layout>
 

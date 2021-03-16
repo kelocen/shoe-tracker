@@ -3,6 +3,11 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools">
 
+  <!--
+  Design Complexity: fragment_listing
+  A Constraint Layout is used because the scroll view and floating button can be
+  positioned and aligned independent of eachother using a single view group.
+  -->
   <androidx.constraintlayout.widget.ConstraintLayout
     style="@style/styleConstraintLayoutListingFragment"
     tools:context=".ui.listing.ListingFragment">
@@ -16,6 +21,11 @@
       app:layout_constraintTop_toTopOf="parent">
 
       <!-- Shoe list layout -->
+      <!--
+      Design Complexity: Shoe List
+      A Linear Layout is used for the shoe list because the items are displayed
+      in a single column.
+      -->
       <LinearLayout
         android:id="@+id/linear_layout_shoes"
         style="@style/styleLinearLayoutListingFragment" />

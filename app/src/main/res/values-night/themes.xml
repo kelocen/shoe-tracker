@@ -15,10 +15,12 @@
     <item name="android:fontFamily">@font/gudea_bold</item>
   </style>
   <!-- = = = = = Main Fragment = = = = = -->
-  <!-- Constraint Layout -->
-  <style name="styleConstraintLayoutActivityMain" parent="Theme.ShoeStoreInventory">
+  <!-- Linear Layout -->
+  <style name="styleLinearLayoutActivityMain" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:gravity">center_horizontal</item>
     <item name="android:background">@color/color_screen_background</item>
   </style>
   <!-- Fragment Container View -->
@@ -40,9 +42,17 @@
     <item name="android:background">?attr/colorPrimary</item>
   </style>
   <!-- = = = = = Login Fragment = = = = = -->
+  <style name="styleLinearLayoutLoginFragment" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:paddingTop">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:paddingStart">@dimen/fragment_parent_layout_padding</item>
+    <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
+  </style>
   <!-- Email EditText View -->
   <style name="styleEditEmailLoginFragment" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:imeOptions">actionDone</item>
     <item name="android:selectAllOnFocus">true</item>
@@ -50,7 +60,7 @@
   </style>
   <!-- Password EditText View-->
   <style name="styleEditPasswordLoginFragment" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
     <item name="android:imeOptions">actionDone</item>
@@ -59,7 +69,7 @@
   </style>
   <!-- LoginFragment login/register buttons -->
   <style name="styleButtonParentLoginFragment" parent="Theme.ShoeStoreInventory">
-    <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
+    <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
     <item name="android:enabled">true</item>
@@ -79,9 +89,11 @@
     <item name="android:fillViewport">true</item>
   </style>
   <!-- Constraint Layout -->
-  <style name="styleConstraintLayoutWelcomeFragment">
+  <style name="styleLinearLayoutWelcomeFragment">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:gravity">center_horizontal</item>
   </style>
   <!-- Shoe Tracker Logo -->
   <style name="styleImageShoeTrackerLogo" parent="Theme.ShoeStoreInventory">
@@ -108,8 +120,16 @@
     <item name="android:textSize">@dimen/welcome_continue_text_size</item>
   </style>
   <!-- = = = = = Step One/Step Two Fragments = = = = = -->
+  <!-- Scroll View -->
   <style name="styleScrollViewInstructionsFragment" parent="styleParentLayout">
     <item name="android:fillViewport">true</item>
+  </style>
+  <!-- Linear Layout -->
+  <style name="styleLinearLayoutStepOneTwo" parent="Theme.ShoeStoreInventory">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:orientation">vertical</item>
   </style>
   <!-- How-to TextView-->
   <style name="styleTextHowToInstructionsFragment">
@@ -348,7 +368,6 @@
     <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
     <item name="android:paddingTop">@dimen/fragment_parent_layout_padding</item>
   </style>
-  <!-- App Name TextView -->
   <!-- Parent Button Style -->
   <style name="styleButtonParent" parent="Theme.ShoeStoreInventory">
     <item name="android:layout_width">wrap_content</item>
