@@ -1,9 +1,9 @@
-package com.example.shoestoreinventory.ui
+package com.example.shoetracker.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.shoestoreinventory.data.models.Shoe
+import com.example.shoetracker.data.models.Shoe
 
 /**
  * A shared [ViewModel] subclass for creating and displaying [Shoe] data.
@@ -35,7 +35,7 @@ class ShoeViewModel : ViewModel() {
     /**
      * Updates the shoes [list][shoes] and [live data][_shoesLiveData] and assigns **true** to the
      * [save event boolean][_eventOnSave] observed by the
-     * [DetailsFragment][com.example.shoestoreinventory.ui.details.DetailsFragment].
+     * [DetailsFragment][com.example.shoetracker.ui.details.DetailsFragment].
      * @param manufacturer A string that contains the shoe manufacturer.
      * @param name A string that contains the shoe name.
      * @param size A double that contains the shoe size.
@@ -60,7 +60,7 @@ class ShoeViewModel : ViewModel() {
 
     /**
      * Assigns **true** to the [cancel event boolean][_eventOnCancel] observed by the
-     * [DetailsFragment][com.example.shoestoreinventory.ui.details.DetailsFragment].
+     * [DetailsFragment][com.example.shoetracker.ui.details.DetailsFragment].
      */
     fun onClickCancel() {
         _eventOnCancel.value = true

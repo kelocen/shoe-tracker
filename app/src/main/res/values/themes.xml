@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
   <!-- Base application theme. -->
-  <style name="Theme.ShoeStoreInventory" parent="Theme.MaterialComponents.Light.DarkActionBar">
+  <style name="Theme.ShoeTracker" parent="Theme.MaterialComponents.Light.DarkActionBar">
     <!-- Primary brand color. -->
     <item name="colorPrimary">@color/color_primary</item>
     <item name="colorPrimaryVariant">@color/color_primary_dark</item>
@@ -16,7 +16,7 @@
   </style>
   <!-- = = = = = Main Fragment = = = = = -->
   <!-- Linear Layout -->
-  <style name="styleLinearLayoutActivityMain" parent="Theme.ShoeStoreInventory">
+  <style name="styleLinearLayoutActivityMain" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
     <item name="android:orientation">vertical</item>
@@ -24,25 +24,25 @@
     <item name="android:background">@color/color_screen_background</item>
   </style>
   <!-- Fragment Container View -->
-  <style name="styleFragmentContainerActivityMain" parent="Theme.ShoeStoreInventory">
+  <style name="styleFragmentContainerActivityMain" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
     <item name="android:name">androidx.navigation.fragment.NavHostFragment</item>
   </style>
   <!-- App Bar -->
-  <style name="styleAppBarActivityMain" parent="Theme.ShoeStoreInventory">
+  <style name="styleAppBarActivityMain" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:theme">@style/Theme.ShoeStoreInventory.AppBarOverlay</item>
+    <item name="android:theme">@style/Theme.ShoeTracker.AppBarOverlay</item>
   </style>
   <!-- Toolbar -->
-  <style name="styleToolbarActivityMain" parent="Theme.ShoeStoreInventory">
+  <style name="styleToolbarActivityMain" parent="Theme.ShoeTracker">
     <item name="android:layout_height">?attr/actionBarSize</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:background">?attr/colorPrimary</item>
   </style>
   <!-- = = = = = Login Fragment = = = = = -->
-  <style name="styleLinearLayoutLoginFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleLinearLayoutLoginFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">match_parent</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:orientation">vertical</item>
@@ -51,7 +51,7 @@
     <item name="android:paddingEnd">@dimen/fragment_parent_layout_padding</item>
   </style>
   <!-- Email EditText View -->
-  <style name="styleEditEmailLoginFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleEditEmailLoginFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:imeOptions">actionDone</item>
@@ -59,7 +59,7 @@
     <item name="android:textAlignment">center</item>
   </style>
   <!-- Password EditText View-->
-  <style name="styleEditPasswordLoginFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleEditPasswordLoginFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
@@ -68,7 +68,7 @@
     <item name="android:textAlignment">center</item>
   </style>
   <!-- LoginFragment login/register buttons -->
-  <style name="styleButtonParentLoginFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleButtonParentLoginFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/login_view_margin_top</item>
@@ -96,7 +96,7 @@
     <item name="android:gravity">center_horizontal</item>
   </style>
   <!-- Shoe Tracker Logo -->
-  <style name="styleImageShoeTrackerLogo" parent="Theme.ShoeStoreInventory">
+  <style name="styleImageShoeTrackerLogo" parent="Theme.ShoeTracker">
     <item name="android:layout_height">@dimen/welcome_logo_height</item>
     <item name="android:layout_width">@dimen/welcome_logo_width</item>
     <item name="android:scaleType">fitCenter</item>
@@ -112,7 +112,7 @@
     -->
   </style>
   <!-- Continue TextView -->
-  <style name="styleTextContinueMessage" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextContinueMessage" parent="Theme.ShoeTracker">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginTop">@dimen/welcome_continue_message_margin_top</item>
@@ -125,7 +125,7 @@
     <item name="android:fillViewport">true</item>
   </style>
   <!-- Linear Layout -->
-  <style name="styleLinearLayoutStepOneTwo" parent="Theme.ShoeStoreInventory">
+  <style name="styleLinearLayoutStepOneTwo" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:gravity">center_horizontal</item>
@@ -141,7 +141,7 @@
     <item name="android:textColor">@color/black</item>
   </style>
   <!-- Step 1 TextView -->
-  <style name="styleTextStepOneInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextStepOneInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_label_text_size</item>
@@ -149,7 +149,7 @@
     <item name="android:layout_marginTop">@dimen/instructions_step_label_margin_top</item>
   </style>
   <!-- Step 1 Message TextView -->
-  <style name="styleTextStepOneMessageInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextStepOneMessageInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_message_text_size</item>
@@ -157,7 +157,7 @@
     <item name="android:layout_marginTop">@dimen/instructions_view_separator_margin_top</item>
   </style>
   <!-- Step One Image -->
-  <style name="styleImageStepOneInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleImageStepOneInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">@dimen/instructions_image_step_one_width</item>
     <item name="android:layout_height">@dimen/instructions_image_step_one_height</item>
     <item name="android:layout_marginBottom">@dimen/listing_floating_button_margin_bottom</item>
@@ -165,7 +165,7 @@
     <item name="android:layout_marginTop">@dimen/instructions_view_separator_margin_top</item>
   </style>
   <!-- Step 2 TextView -->
-  <style name="styleTextStepTwoInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextStepTwoInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_label_text_size</item>
@@ -173,7 +173,7 @@
     <item name="android:layout_marginTop">@dimen/instructions_step_two_margin_top</item>
   </style>
   <!-- Step 2 Message TextView -->
-  <style name="styleTextStepTwoMessageInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextStepTwoMessageInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:textSize">@dimen/instructions_step_message_text_size</item>
@@ -181,7 +181,7 @@
     <item name="android:layout_marginTop">@dimen/instructions_view_separator_margin_top</item>
   </style>
   <!-- Step Two Image -->
-  <style name="styleImageStepTwoInstructionsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleImageStepTwoInstructionsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">@dimen/instructions_image_step_two_width</item>
     <item name="android:layout_height">@dimen/instructions_image_step_two_height</item>
     <item name="android:layout_marginBottom">@dimen/listing_floating_button_margin_bottom</item>
@@ -190,7 +190,7 @@
   </style>
   <!-- = = = = = Listing Fragment = = = = = -->
   <!-- Constraint Layout -->
-  <style name="styleConstraintLayoutListingFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleConstraintLayoutListingFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
     <item name="android:paddingStart">@dimen/fragment_parent_layout_padding</item>
@@ -198,18 +198,18 @@
     <item name="android:background">@color/color_screen_background</item>
   </style>
   <!-- Scroll View -->
-  <style name="styleScrollViewListingFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleScrollViewListingFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
   </style>
   <!-- Linear Layout -->
-  <style name="styleLinearLayoutListingFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleLinearLayoutListingFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:orientation">vertical</item>
   </style>
   <!-- Floating Button -->
-  <style name="styleFloatingButtonListingFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleFloatingButtonListingFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_marginBottom">@dimen/listing_floating_button_margin_bottom</item>
@@ -217,12 +217,12 @@
   </style>
   <!-- = = = = = Details Fragment = = = = = -->
   <!-- Constraint Layout -->
-  <style name="styleConstraintLayoutDetailsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleConstraintLayoutDetailsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>
   </style>
   <!-- Column Guideline -->
-  <style name="styleGuidelineDetailsFragment" parent="Theme.ShoeStoreInventory">
+  <style name="styleGuidelineDetailsFragment" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:orientation">vertical</item>
@@ -238,7 +238,7 @@
     <item name="android:layout_marginBottom">@dimen/details_buttons_margin_bottom</item>
   </style>
   <!-- Label Text View -->
-  <style name="styleTextParentLabel" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextParentLabel" parent="Theme.ShoeTracker">
     <item name="android:layout_marginStart">@dimen/details_label_margin_start</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
@@ -261,7 +261,7 @@
     <item name="android:text">@string/details_label_shoe_description</item>
   </style>
   <!-- Parent EditText View -->
-  <style name="styleEditParentInput" parent="Theme.ShoeStoreInventory">
+  <style name="styleEditParentInput" parent="Theme.ShoeTracker">
     <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textAlignment">center</item>
@@ -286,13 +286,13 @@
   </style>
   <!-- = = = = = Shoe Item Layout = = = = = -->
   <!-- Constraint Layout -->
-  <style name="styleConstraintLayoutShoeItem" parent="Theme.ShoeStoreInventory">
+  <style name="styleConstraintLayoutShoeItem" parent="Theme.ShoeTracker">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:background">@color/color_screen_background</item>
   </style>
   <!-- Cardview -->
-  <style name="styleCardviewShoeItem" parent="Theme.ShoeStoreInventory">
+  <style name="styleCardviewShoeItem" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_marginBottom">@dimen/item_cardview_bottom_margin</item>
@@ -301,21 +301,21 @@
     <item name="android:backgroundTint">@color/color_cardview_background</item>
   </style>
   <!-- CardView Background Square-->
-  <style name="styleImageCardViewShapeTop" parent="Theme.ShoeStoreInventory">
+  <style name="styleImageCardViewShapeTop" parent="Theme.ShoeTracker">
     <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">@dimen/general_dimen_zero_height_width</item>
     <item name="android:src">@drawable/shape_card_top</item>
     <item name="android:scaleType">centerCrop</item>
   </style>
   <!-- CardView Background Square-->
-  <style name="styleImageCardViewShapeStart" parent="Theme.ShoeStoreInventory">
+  <style name="styleImageCardViewShapeStart" parent="Theme.ShoeTracker">
     <item name="android:layout_width">@dimen/general_dimen_zero_height_width</item>
     <item name="android:layout_height">@dimen/general_dimen_zero_height_width</item>
     <item name="android:src">@drawable/shape_card_start</item>
     <item name="android:scaleType">centerCrop</item>
   </style>
   <!-- Parent Shoe Item TextView -->
-  <style name="styleTextShoeItem" parent="Theme.ShoeStoreInventory">
+  <style name="styleTextShoeItem" parent="Theme.ShoeTracker">
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
   </style>
@@ -360,7 +360,7 @@
   </style>
   <!-- = = = = = Shared Styles = = = = = -->
   <!-- Parent Layout -->
-  <style name="styleParentLayout" parent="Theme.ShoeStoreInventory">
+  <style name="styleParentLayout" parent="Theme.ShoeTracker">
     <item name="android:layout_height">match_parent</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:background">@color/color_screen_background</item>
@@ -369,7 +369,7 @@
     <item name="android:paddingTop">@dimen/fragment_parent_layout_padding</item>
   </style>
   <!-- Parent Button Style -->
-  <style name="styleButtonParent" parent="Theme.ShoeStoreInventory">
+  <style name="styleButtonParent" parent="Theme.ShoeTracker">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textAllCaps">true</item>
@@ -381,14 +381,14 @@
     <item name="android:layout_marginBottom">@dimen/button_continue_margin_bottom</item>
   </style>
   <!-- Action Bar -->
-  <style name="Theme.ShoeStoreInventory.NoActionBar">
+  <style name="Theme.ShoeTracker.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
   <!-- App Bar Overlay -->
-  <style name="Theme.ShoeStoreInventory.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  <style name="Theme.ShoeTracker.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
   <!-- Popup Overlay -->
-  <style name="Theme.ShoeStoreInventory.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+  <style name="Theme.ShoeTracker.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
     <item name="android:backgroundTint">@color/color_screen_background</item>
   </style>
 </resources>

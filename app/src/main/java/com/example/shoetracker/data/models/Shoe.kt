@@ -1,4 +1,4 @@
-package com.example.shoestoreinventory.data.models
+package com.example.shoetracker.data.models
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

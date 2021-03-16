@@ -1,4 +1,4 @@
-package com.example.shoestoreinventory.ui.details
+package com.example.shoetracker.ui.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.shoestoreinventory.R
-import com.example.shoestoreinventory.databinding.FragmentDetailsBinding
-import com.example.shoestoreinventory.ui.ShoeViewModel
+import com.example.shoetracker.R
+import com.example.shoetracker.databinding.FragmentDetailsBinding
+import com.example.shoetracker.ui.ShoeViewModel
 
 /**
- * A [Fragment] subclass responsible for adding new [Shoes][com.example.shoestoreinventory.data.models.Shoe].
+ * A [Fragment] subclass responsible for adding new [Shoes][com.example.shoetracker.data.models.Shoe].
  */
 class DetailsFragment : Fragment() {
 

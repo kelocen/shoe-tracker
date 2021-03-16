@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.example.shoestoreinventory
+package com.example.shoetracker
 
 import android.app.Application
 import timber.log.Timber

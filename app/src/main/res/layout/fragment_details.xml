@@ -120,9 +120,9 @@
   </androidx.constraintlayout.widget.ConstraintLayout>
 
   <data>
-    <import type="com.example.shoestoreinventory.utils.Converter" />
+    <import type="com.example.shoetracker.utils.Converter" />
     <variable
       name="shoe"
-      type="com.example.shoestoreinventory.ui.ShoeViewModel" />
+      type="com.example.shoetracker.ui.ShoeViewModel" />
   </data>
 </layout>

@@ -128,9 +128,9 @@
   </androidx.cardview.widget.CardView>
 
   <data>
-    <import type="com.example.shoestoreinventory.utils.Converter" />
+    <import type="com.example.shoetracker.utils.Converter" />
     <variable
       name="shoe"
-      type="com.example.shoestoreinventory.data.models.Shoe" />
+      type="com.example.shoetracker.data.models.Shoe" />
   </data>
 </layout>

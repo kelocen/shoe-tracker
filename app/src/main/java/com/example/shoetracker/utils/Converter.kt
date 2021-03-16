@@ -1,10 +1,10 @@
-package com.example.shoestoreinventory.utils
+package com.example.shoetracker.utils
 
 import androidx.databinding.InverseMethod
 
 /**
  * A utility object for converting between [String] and [Double] for the
- * **size** property of the [Shoe][com.example.shoestoreinventory.data.models.Shoe] data class.
+ * **size** property of the [Shoe][com.example.shoetracker.data.models.Shoe] data class.
  */
 object Converter {
     @InverseMethod("stringToDouble")

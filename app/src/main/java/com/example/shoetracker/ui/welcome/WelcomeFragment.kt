@@ -1,4 +1,4 @@
-package com.example.shoestoreinventory.ui.instructions
+package com.example.shoetracker.ui.welcome
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,28 +7,27 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.shoestoreinventory.R
-import com.example.shoestoreinventory.databinding.FragmentStepTwoBinding
+import com.example.shoetracker.R
+import com.example.shoetracker.databinding.FragmentWelcomeBinding
 
 /**
- * A [Fragment] subclass for the instructions screen.
+ * A [Fragment] subclass for the welcome screen.
  */
-class StepTwoFragment : Fragment() {
-
-    private lateinit var binding: FragmentStepTwoBinding
+class WelcomeFragment : Fragment() {
+    private lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_step_two, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonContinue.setOnClickListener {
-            findNavController().navigate(R.id.action_StepTwoFragment_to_ListingFragment)
+            findNavController().navigate(R.id.action_WelcomeFragment_to_InstructionsFragment)
         }
     }
 }

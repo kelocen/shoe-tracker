@@ -1,4 +1,4 @@
-package com.example.shoestoreinventory.ui.listing
+package com.example.shoetracker.ui.listing
 
 import android.os.Bundle
 import android.view.*
@@ -13,14 +13,14 @@ import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.shoestoreinventory.R
-import com.example.shoestoreinventory.data.models.Shoe
-import com.example.shoestoreinventory.databinding.FragmentListingBinding
-import com.example.shoestoreinventory.databinding.ShoeItemBinding
-import com.example.shoestoreinventory.ui.ShoeViewModel
+import com.example.shoetracker.R
+import com.example.shoetracker.data.models.Shoe
+import com.example.shoetracker.databinding.FragmentListingBinding
+import com.example.shoetracker.databinding.ShoeItemBinding
+import com.example.shoetracker.ui.ShoeViewModel
 
 /**
- * A [Fragment] subclass for the [Shoe][com.example.shoestoreinventory.data.models.Shoe] listing screen.
+ * A [Fragment] subclass for the [Shoe][com.example.shoetracker.data.models.Shoe] listing screen.
  */
 class ListingFragment : Fragment() {
 

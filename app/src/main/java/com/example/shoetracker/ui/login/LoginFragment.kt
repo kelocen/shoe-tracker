@@ -1,4 +1,4 @@
-package com.example.shoestoreinventory.ui.login
+package com.example.shoetracker.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.shoestoreinventory.R
-import com.example.shoestoreinventory.databinding.FragmentLoginBinding
+import com.example.shoetracker.R
+import com.example.shoetracker.databinding.FragmentLoginBinding
 
 /**
  * A [Fragment] subclass for the application login screen, and the default destination in the

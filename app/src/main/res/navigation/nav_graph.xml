@@ -7,7 +7,7 @@
   <fragment
     android:id="@+id/fragment_LoginFragment"
     android:label="@string/graph_label_login_fragment"
-    android:name="com.example.shoestoreinventory.ui.login.LoginFragment">
+    android:name="com.example.shoetracker.ui.login.LoginFragment">
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
       app:enterAnim="@anim/fragment_open_enter"
@@ -20,7 +20,7 @@
   <fragment
     android:id="@+id/fragment_WelcomeFragment"
     android:label="@string/graph_label_welcome_fragment"
-    android:name="com.example.shoestoreinventory.ui.welcome.WelcomeFragment">
+    android:name="com.example.shoetracker.ui.welcome.WelcomeFragment">
     <action
       android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
       app:enterAnim="@anim/fragment_fade_enter"
@@ -33,7 +33,7 @@
   <fragment
     android:id="@+id/fragment_StepOneFragment"
     android:label="@string/graph_label_step_one_fragment"
-    android:name="com.example.shoestoreinventory.ui.instructions.StepOneFragment">
+    android:name="com.example.shoetracker.ui.instructions.StepOneFragment">
     <action
       android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
       app:enterAnim="@anim/fragment_fade_enter"
@@ -46,7 +46,7 @@
   <fragment
     android:id="@+id/fragment_StepTwoFragment"
     android:label="@string/graph_label_step_two_fragment"
-    android:name="com.example.shoestoreinventory.ui.instructions.StepTwoFragment">
+    android:name="com.example.shoetracker.ui.instructions.StepTwoFragment">
     <action
       android:id="@+id/action_StepTwoFragment_to_ListingFragment"
       app:destination="@+id/fragment_ListingFragment"
@@ -59,7 +59,7 @@
   <fragment
     android:id="@+id/fragment_ListingFragment"
     android:label="@string/graph_label_listing_fragment"
-    android:name="com.example.shoestoreinventory.ui.listing.ListingFragment">
+    android:name="com.example.shoetracker.ui.listing.ListingFragment">
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
       app:enterAnim="@anim/fragment_fade_enter"
@@ -72,7 +72,7 @@
   <fragment
     android:id="@+id/fragment_DetailsFragment"
     android:label="@string/graph_label_details_fragment"
-    android:name="com.example.shoestoreinventory.ui.details.DetailsFragment">
+    android:name="com.example.shoetracker.ui.details.DetailsFragment">
     <action
       android:id="@+id/action_cancel_DetailsFragment_to_ListingFragment"
       app:enterAnim="@anim/fragment_close_enter"

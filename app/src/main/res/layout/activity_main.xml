@@ -21,7 +21,7 @@
       <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/styleToolbarActivityMain"
-        app:popupTheme="@style/Theme.ShoeStoreInventory.PopupOverlay" />
+        app:popupTheme="@style/Theme.ShoeTracker.PopupOverlay" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <!-- Fragment Container -->
