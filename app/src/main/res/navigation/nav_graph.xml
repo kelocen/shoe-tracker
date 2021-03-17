@@ -10,9 +10,9 @@
     android:name="com.example.shoetracker.ui.login.LoginFragment">
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
+      app:destination="@id/fragment_WelcomeFragment"
       app:enterAnim="@anim/fragment_open_enter"
       app:exitAnim="@anim/fragment_open_exit"
-      app:destination="@id/fragment_WelcomeFragment"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
   </fragment>
@@ -23,11 +23,11 @@
     android:name="com.example.shoetracker.ui.welcome.WelcomeFragment">
     <action
       android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
+      app:destination="@+id/fragment_StepOneFragment"
       app:enterAnim="@anim/fragment_fade_enter"
       app:exitAnim="@anim/fragment_fade_exit"
       app:popEnterAnim="@anim/fragment_fade_enter"
-      app:popExitAnim="@anim/fragment_fade_exit"
-      app:destination="@+id/fragment_StepOneFragment" />
+      app:popExitAnim="@anim/fragment_fade_exit" />
   </fragment>
   <!-- Step One Fragment -->
   <fragment
@@ -36,11 +36,11 @@
     android:name="com.example.shoetracker.ui.instructions.StepOneFragment">
     <action
       android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
+      app:destination="@+id/fragment_StepTwoFragment"
       app:enterAnim="@anim/fragment_fade_enter"
       app:exitAnim="@anim/fragment_fade_exit"
       app:popEnterAnim="@anim/fragment_fade_enter"
-      app:popExitAnim="@anim/fragment_fade_exit"
-      app:destination="@+id/fragment_StepTwoFragment" />
+      app:popExitAnim="@anim/fragment_fade_exit" />
   </fragment>
   <!-- Step Two Fragment -->
   <fragment
@@ -62,28 +62,15 @@
     android:name="com.example.shoetracker.ui.listing.ListingFragment">
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
+      app:destination="@+id/fragment_DetailsFragment"
       app:enterAnim="@anim/fragment_fade_enter"
       app:exitAnim="@anim/fragment_fade_exit"
-      app:popEnterAnim="@anim/fragment_fade_enter"
-      app:popExitAnim="@anim/fragment_fade_exit"
-      app:destination="@+id/fragment_DetailsFragment" />
+      app:popEnterAnim="@anim/fragment_close_enter"
+      app:popExitAnim="@anim/fragment_close_exit" />
   </fragment>
-  <!-- Details Fragment -->
+  <!--  Details Fragment -->
   <fragment
     android:id="@+id/fragment_DetailsFragment"
     android:label="@string/graph_label_details_fragment"
-    android:name="com.example.shoetracker.ui.details.DetailsFragment">
-    <action
-      android:id="@+id/action_cancel_DetailsFragment_to_ListingFragment"
-      app:enterAnim="@anim/fragment_close_enter"
-      app:exitAnim="@anim/fragment_close_exit"
-      app:popUpTo="@id/fragment_ListingFragment"
-      app:destination="@+id/fragment_ListingFragment" />
-    <action
-      android:id="@+id/action_save_DetailsFragment_to_ListingFragment"
-      app:enterAnim="@anim/fragment_fade_enter"
-      app:exitAnim="@anim/fragment_fade_exit"
-      app:popUpTo="@id/fragment_ListingFragment"
-      app:destination="@+id/fragment_ListingFragment" />
-  </fragment>
+    android:name="com.example.shoetracker.ui.details.DetailsFragment" />
 </navigation>

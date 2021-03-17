@@ -6,7 +6,7 @@
   <!--
   Design Complexity: fragment_listing
   A Constraint Layout is used because the scroll view and floating button can be
-  positioned and aligned independent of eachother using a single view group.
+  positioned independent of eachother using a single view group.
   -->
   <androidx.constraintlayout.widget.ConstraintLayout
     style="@style/styleConstraintLayoutListingFragment"

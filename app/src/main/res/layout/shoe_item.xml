@@ -14,8 +14,7 @@
     <!--
     Design Complexity: shoe_item
     A Constraint Layout is used for the Shoe Item layout because the items are
-    positioned relative to and independent of eachother and guidelines using
-    a single view group.
+    positioned relative to (and independent of) eachother.
     -->
     <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/layout_shoe_item"

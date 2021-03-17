@@ -31,13 +31,13 @@ class DetailsFragment : Fragment() {
         binding.shoe = shoeViewModel
         shoeViewModel.eventOnSave.observe(viewLifecycleOwner, { saveClicked ->
             if (saveClicked) {
-                findNavController().navigate(R.id.action_save_DetailsFragment_to_ListingFragment)
+                findNavController().popBackStack()
                 shoeViewModel.onClickComplete()
             }
         })
         shoeViewModel.eventOnCancel.observe(viewLifecycleOwner, { cancelClicked ->
             if (cancelClicked) {
-                findNavController().navigate(R.id.action_cancel_DetailsFragment_to_ListingFragment)
+                findNavController().popBackStack()
                 shoeViewModel.onClickComplete()
             }
         })
