@@ -21,7 +21,7 @@
       android:imeActionLabel="@string/login_action_login"
       android:inputType="textEmailAddress" />
 
-    <!-- Register Button -->
+    <!-- Password EditText Field -->
     <EditText
       android:id="@+id/edit_password"
       style="@style/styleEditPasswordLoginFragment"
@@ -29,15 +29,15 @@
       android:hint="@string/login_prompt_password"
       android:inputType="textPassword" />
 
-    <!-- Password EditText Field -->
-    <Button
-      android:id="@+id/button_register"
-      style="@style/styleButtonRegister" />
-
     <!-- Login Button -->
     <Button
       android:id="@+id/button_login"
       style="@style/styleButtonLogin" />
+
+    <!-- Register Button -->
+    <Button
+      android:id="@+id/button_register"
+      style="@style/styleButtonRegister" />
 
   </LinearLayout>
 </layout>
