@@ -11,8 +11,8 @@
     <action
       android:id="@+id/action_LoginFragment_to_WelcomeFragment"
       app:destination="@id/fragment_WelcomeFragment"
-      app:enterAnim="@anim/fragment_open_enter"
-      app:exitAnim="@anim/fragment_open_exit"
+      app:enterAnim="@anim/nav_default_pop_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
   </fragment>
@@ -24,10 +24,10 @@
     <action
       android:id="@+id/action_WelcomeFragment_to_InstructionsFragment"
       app:destination="@+id/fragment_StepOneFragment"
-      app:enterAnim="@anim/fragment_fade_enter"
-      app:exitAnim="@anim/fragment_fade_exit"
-      app:popEnterAnim="@anim/fragment_fade_enter"
-      app:popExitAnim="@anim/fragment_fade_exit" />
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"
+      app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+      app:popExitAnim="@anim/nav_default_pop_exit_anim" />
   </fragment>
   <!-- Step One Fragment -->
   <fragment
@@ -37,10 +37,10 @@
     <action
       android:id="@+id/action_StepOneFragment_to_StepTwoFragment"
       app:destination="@+id/fragment_StepTwoFragment"
-      app:enterAnim="@anim/fragment_fade_enter"
-      app:exitAnim="@anim/fragment_fade_exit"
-      app:popEnterAnim="@anim/fragment_fade_enter"
-      app:popExitAnim="@anim/fragment_fade_exit" />
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"
+      app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+      app:popExitAnim="@anim/nav_default_pop_exit_anim" />
   </fragment>
   <!-- Step Two Fragment -->
   <fragment
@@ -50,8 +50,8 @@
     <action
       android:id="@+id/action_StepTwoFragment_to_ListingFragment"
       app:destination="@+id/fragment_ListingFragment"
-      app:enterAnim="@anim/fragment_fade_enter"
-      app:exitAnim="@anim/fragment_fade_exit"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"
       app:popUpTo="@id/nav_graph"
       app:popUpToInclusive="true" />
   </fragment>
@@ -63,10 +63,10 @@
     <action
       android:id="@+id/action_ListingFragment_to_DetailsFragment"
       app:destination="@+id/fragment_DetailsFragment"
-      app:enterAnim="@anim/fragment_fade_enter"
-      app:exitAnim="@anim/fragment_fade_exit"
-      app:popEnterAnim="@anim/fragment_close_enter"
-      app:popExitAnim="@anim/fragment_close_exit" />
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim"
+      app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+      app:popExitAnim="@anim/nav_default_pop_exit_anim" />
   </fragment>
   <!--  Details Fragment -->
   <fragment

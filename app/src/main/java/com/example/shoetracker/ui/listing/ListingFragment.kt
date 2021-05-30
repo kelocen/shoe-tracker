@@ -44,8 +44,8 @@ class ListingFragment : Fragment() {
         return if (item.itemId == R.id.fragment_LoginFragment) {
             val options = NavOptions.Builder()
                 .setLaunchSingleTop(true).setPopUpTo(R.id.nav_graph, true)
-                .setEnterAnim(R.anim.fragment_close_enter)
-                .setExitAnim(R.anim.fragment_close_exit)
+                .setEnterAnim(R.anim.nav_default_enter_anim)
+                .setExitAnim(R.anim.nav_default_exit_anim)
                 .build()
             try {
                 findNavController().navigate(item.itemId, null, options)
